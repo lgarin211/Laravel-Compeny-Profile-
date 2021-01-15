@@ -1,0 +1,5 @@
+@include('admin.head')
+@include('admin.sitebar')
+@include('admin.admin')
+@include('admin.modal_logout')
+@include('admin.foot')
