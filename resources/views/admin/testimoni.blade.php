@@ -14,7 +14,6 @@
                <table class="table">
                    <thead>
                        <tr class="bg-secondary">
-                           <th></th>
                            <th scope="col">#</th>
                            <th scope="col">Nama</th>
                            <th scope="col">Nama Perusahaan</th>
@@ -26,13 +25,12 @@
                    <tbody>
                        <tr>
                            <!-- <td><input type="checkbox" name=""></td> -->
-                           <th scope="row">1</th>
                            <td>Mark</td>
                            <td>Otto</td>
                            <td>PT Bahagi</td>
                            <td>Perusahaan ini sangat baik dan ramah, project yang saya berikan diselesaikan dengan baik</td>
                            <td>
-                           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Vfw1pC-3Vwtw1eVE2D6waAOkdaXwBfpCFg&usqp=CAU" class="w-50" style="max-height: 100px;">
+                               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Vfw1pC-3Vwtw1eVE2D6waAOkdaXwBfpCFg&usqp=CAU" class="w-50" style="max-height: 100px;">
                            </td>
                            <td>
                                <div class="row">
