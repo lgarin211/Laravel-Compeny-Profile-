@@ -4,7 +4,7 @@
     <section class="container">
       <div class="row">
         <div class="col-md-4">
-    <button type="button" class="btn btn-success"><i class="far fa-plus-square">Tambah Data</i></button>
+    <button type="button" class="btn btn-success"><i class="far fa-plus-square"> Tambah Data</i></button>
       </div>
       <div class="col-md-4"></div>
     <div class="row col-md-4">
