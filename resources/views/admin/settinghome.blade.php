@@ -5,12 +5,6 @@
     {{ session('cas') }}
 </div>
 @endif
-<section>
-<table>
-    <th>
-        <td>agus</td>
-        <td>dom</td>
-    </th>
-</table>
+
 </section>
 @endsection
