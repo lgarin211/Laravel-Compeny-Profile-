@@ -5,20 +5,12 @@
     {{ session('cas') }}
 </div>
 @endif
-<html>
-    <head>
-
-    </head>
-    <body>
-        <thead>
-            <td>ingfo</td>
-            <td>cobain</td>
-            <td>dulu</td>
-        </thead>
-        <tbody>
-            <td>no ingfo</td>
-        </tbody>
-    </body>
-</html>
-
+<section>
+<table>
+    <th>
+        <td>agus</td>
+        <td>dom</td>
+    </th>
+</table>
+</section>
 @endsection
