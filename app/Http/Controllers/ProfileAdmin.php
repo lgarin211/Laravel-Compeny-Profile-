@@ -96,7 +96,7 @@ class ProfileAdmin extends Controller
     public function data()
     {
         $data = [];
-        $tabel = ['menu', 'developer', 'project', 'setting', 'users', 'cat_project','views'];
+        $tabel = ['menu', 'developer', 'project', 'setting', 'users', 'cat_project','views','testimonies'];
         foreach ($tabel as $key => $value) {
             $das = DB::table($value)
                 ->orderBy('id', 'desc')
@@ -120,6 +120,12 @@ class ProfileAdmin extends Controller
         return $data;
     }
 
+    public function Testimony()
+    {
+        $data=$this->data();
+        // \dd($data);
+        return view('admin.testimoni', \compact('data'));
+    }
     public function indfer()
     {
         $data = $this->data();
