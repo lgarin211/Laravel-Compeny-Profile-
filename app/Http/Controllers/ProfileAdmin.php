@@ -52,7 +52,7 @@ class ProfileAdmin extends Controller
     {
         $data = $this->data();
         // dd($data);
-        return view('admin/setting', \compact('data'));
+        return view('admin/settinghome', \compact('data'));
     }
     public function adminFilemanager()
     {

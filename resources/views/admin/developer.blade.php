@@ -6,8 +6,16 @@
     {{ session('cas') }}
 </div>
 @endif
+<div class="row">
+    <div class="col-md-4 mb-2">
 @include('admin.modal')
 @yield('modaldeveloper')
+    </div>
+    <div class="col-md-4"></div>
+<div class="col-md-4">
+@yield('modaldevelopersrc')
+</div>
+</div>
 <div class="container shodow-sm">
     @foreach ($data['developer'] as $item)
     <div class="card mb-3">

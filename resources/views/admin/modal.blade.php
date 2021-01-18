@@ -105,6 +105,15 @@
 </script>
 @endsection
 
+{{-- Section search --}}
+@section('modaldevelopersrc')
+<div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="cari" aria-label="Recipient's username" aria-describedby="button-addon2">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Cari</button>
+  </div>
+@endsection
+
+
 @section('modalproject')
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">

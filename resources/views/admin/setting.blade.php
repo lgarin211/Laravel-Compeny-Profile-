@@ -9,7 +9,7 @@
 <div class="container card shadow-sm ">
     <div class="row">
         @foreach ($data['setting'] as $key=>$item)
-        <div class="col-sm-4">
+        <div class="col-md-6">
             <form method="POST" action="pas" class="card ">
                 @csrf
                 <div class="mb-3">
@@ -25,4 +25,6 @@
         @endforeach
     </div>
 </div>
+
 @endsection
+
