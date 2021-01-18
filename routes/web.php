@@ -44,3 +44,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// test frontend
+Route::get('/frontend', function () {
+    return view('admin.testimoni');
+});

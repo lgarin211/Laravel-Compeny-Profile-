@@ -25,6 +25,9 @@
             <span>Project</span></a>
         <a class="nav-link" href="setting">
             <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Testimoni</span></a>
+        <a class="nav-link" href="testimoni">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Setting</span></a>
     </li>
 
