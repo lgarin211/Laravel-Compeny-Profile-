@@ -27,9 +27,10 @@
             <div id="js-grid-mosaic-flat" class="cbp cbp-l-grid-mosaic-flat no-transition">
                 @foreach ($data['project'] as $item)
                 <div class="cbp-item @foreach ($item->filter as $is){{$is.' '}}@endforeach">
-                    <a href="{{$item->link}}" class="cbp-caption cbp-lightbox" data-title="Bolt UI<br>by Tiberiu Neamu">
+
+                    <a href="{{$item->Img}}" class="cbp-caption cbp-lightbox" data-title="{{$item->Deskripsi}}Project Dapat di lihat di {{$item->link}}">
                         <div class="cbp-caption-defaultWrap">
-                            <img src="{{$item->Img}}" alt="work">
+                            <img src="{{$item->Img}}" alt="work" style="max-width: min-content; max-height: 400px;">
                         </div>
                         <div class="cbp-caption-activeWrap">
                             <div class="cbp-l-caption-alignCenter">

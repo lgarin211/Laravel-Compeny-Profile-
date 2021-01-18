@@ -26,8 +26,10 @@ Route::get('/admin/developer', [ProfileAdmin::class, 'adminDev']);
 Route::get('/admin/cp', [ProfileAdmin::class, 'adminCPs']);
 Route::get('/admin/project', [ProfileAdmin::class, 'adminproject']);
 Route::get('/admin/te', [ProfileAdmin::class, 'adminFilemanager']);
+Route::get('/admin/pas', [ProfileAdmin::class, 'pas']);
 
 Route::post('/admin/pas', [ProfileAdmin::class, 'pas']);
+Route::post('/admin/add', [ProfileAdmin::class, 'add']);
 
 
 

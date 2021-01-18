@@ -8,8 +8,6 @@
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
-            @yield('modal')
-
             <!-- Page Heading -->
             @yield('pasing')
 

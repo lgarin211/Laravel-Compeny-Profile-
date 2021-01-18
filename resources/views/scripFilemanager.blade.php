@@ -80,7 +80,7 @@
                     // set or change the preview image src
                     items.forEach(function(item) {
                         target_preview.append(
-                            $('<img>').css('height', '5rem').attr('src', item.thumb_url)
+                            $('<img>').css('width', '100%').attr('src', item.thumb_url)
                         );
                     });
 
@@ -125,7 +125,7 @@
                 // set or change the preview image src
                 items.forEach(function(item) {
                     let img = document.createElement('img')
-                    img.setAttribute('style', 'height: 5rem')
+                    img.setAttribute('style', 'width: 100%')
                     img.setAttribute('src', item.thumb_url)
                     target_preview.appendChild(img);
                 });
