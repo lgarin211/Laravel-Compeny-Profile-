@@ -50,6 +50,11 @@ Route::get('/frontend', function () {
     return view('admin.testimoni');
 });
 
+// fORNED
+Route::get('/frontend/dashboard', function () {
+    return view('FORNED.dashboard');
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
