@@ -27,8 +27,8 @@
             </div>
             <div class="col-md-5">
                 <img src="{{$item->Img}}"
-                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500px"
-                    height="500px" role="img">
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="250px"
+                    height="250px" role="img">
 
             </div>
         </div>
@@ -41,7 +41,7 @@
                 <p class="lead">
                     {{$item->Deskripsi}} <br>Project Dapat di lihat di <a href="{{$item->link}}">
                         {{$item->link}}</a><br><a href="pas?tabel=project&id={{$item->id}}&view=editproject"
-                        class="btn btn-primary">edit</a>
+                        class="btn btn-primary"><i class="fas fa-user-edit" aria-hidden="true">  Edit</i></a>
                 </p>
             </div>
             <div class="col-md-5">
