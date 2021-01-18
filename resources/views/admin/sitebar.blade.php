@@ -23,7 +23,7 @@
         <a class="nav-link" href="project">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Project</span></a>
-        <a class="nav-link" href="setting">
+        <a class="nav-link" href="testimonies">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Testimoni</span></a>
         <a class="nav-link" href="testimoni">
