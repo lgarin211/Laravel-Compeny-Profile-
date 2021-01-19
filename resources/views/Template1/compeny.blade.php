@@ -1,3 +1,4 @@
+
 @include('Template1.head')
 
 <!-- Main Section start -->
@@ -11,11 +12,16 @@
 
 <!-- About Boxes start -->
 @include('Template1.About Boxes')
+@include('Template1.testy')
+
+<!-- About Boxes ends -->
+<!-- About Boxes start -->
+<!-- @include('Template1.ex') -->
 <!-- About Boxes ends -->
 
 
 <!-- Team start -->
- @include('Template1.Team')
+ <!-- @include('Template1.Team') -->
 <!-- Team ends -->
 
 <!-- Quote start -->

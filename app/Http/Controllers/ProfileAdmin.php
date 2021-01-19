@@ -16,6 +16,7 @@ class ProfileAdmin extends Controller
     //
     public function pas()
     {
+        // \dd($_GET);
         if (!empty($_GET['tabel'])) {
             $data = $this->data();
             $data[$_GET['tabel']] = DB::table($_GET['tabel'])
@@ -26,14 +27,14 @@ class ProfileAdmin extends Controller
                     $data['project'][$key]->filter = explode(',', $value->filter);
                 }
             }
-            // dd($data);
+            // dd($data[$_GET['tabel']]);
             return view('admin.' . $_GET['view'], \compact('data'));
         }
         if (!empty($_POST)) {
             # code...
             $tabel = $_POST['tabel'];
             unset($_POST['_token'], $_POST['tabel']);
-            // dd($_POST);
+            // dd($tabel);
             DB::table($tabel)
                 ->where('id', $_POST['id'])
                 ->update($_POST);

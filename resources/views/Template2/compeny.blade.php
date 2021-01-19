@@ -1,0 +1,5 @@
+@include('Template2.head')
+@include('Template2.Developer')
+@include('Template2.about')
+@include('Template2.project')
+@include('Template2.foot')
