@@ -38,7 +38,7 @@
                             <p class="color-black testimonial-para mb-15px"> . </p>
                             <div class="testimonial-post">
                                 <a href="https://megaone.acrothemes.com/javascript:void(0)" class="post"><img
-                                        src="{{$item->Gambar}}" alt="image"></a>
+                                        src="{{$item->Gambar}}" class="look" alt="image"></a>
                                 <div class="text-content">
                                     <h5 class="color-black text-capitalize">{{$item->Nama}}</h5>
                                     <p class="color-grey"> {{$item->Deskripsi}}</p>
