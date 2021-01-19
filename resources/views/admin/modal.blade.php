@@ -13,8 +13,6 @@
             </div>
             <div class="modal-body">
                 @foreach ($data['developer'] as $key=>$item)
-                @if ($key>1)
-
                 <form method="POST" action="add" class="">
                     <input type="hidden" name="tabel" value="developer">
                     @csrf
@@ -80,7 +78,6 @@
                                             </div>
                                             @endif
                                             @endif
-                                            @endif
                                             @endforeach
                                         </div>
                                     </div>
@@ -89,6 +86,7 @@
                         </div>
                     </div>
                     <br>
+                    <?break;?>
                     @endforeach
             </div>
             <div class="modal-footer">
@@ -131,8 +129,6 @@
             </div>
             <div class="modal-body">
                 @foreach ($data['project'] as $key=>$item)
-                @if ($key>1)
-
                 <form method="POST" action="add" class="">
                     @csrf
                     <input type="hidden" name="tabel" value="project">
@@ -218,7 +214,6 @@
                                             </div>
                                             @endif
                                             @endif
-                                            @endif
                                             @endforeach
                                         </div>
                                     </div>
@@ -227,6 +222,7 @@
                         </div>
                     </div>
                     <br>
+                    <?break;?>
                     @endforeach
             </div>
             <div class="modal-footer">
@@ -246,7 +242,8 @@
 @section('modalTestimony')
 <!-- Button trigger modal -->
 
-<button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success"><i class="far fa-plus-square"> Tambah Data</i></button>
+<button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success"><i
+        class="far fa-plus-square"> Tambah Data</i></button>
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl">
@@ -257,8 +254,6 @@
             </div>
             <div class="modal-body">
                 @foreach ($data['testimonies'] as $key=>$item)
-                @if ($key>1)
-
                 <form method="POST" action="add" class="">
                     @csrf
                     <input type="hidden" name="tabel" value="testimonies">
@@ -339,6 +334,7 @@
                         </div>
                     </div>
                     <br>
+                    <?break;?>
                     @endforeach
             </div>
             <div class="modal-footer">
