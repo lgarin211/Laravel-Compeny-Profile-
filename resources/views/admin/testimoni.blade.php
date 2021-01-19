@@ -4,7 +4,7 @@
 <section class="container">
     <div class="row">
         <div class="col-md-4">
-            @include('admin.modal')
+        @include('admin.modal')
             @yield('modalTestimony')
         </div>
         <div class="col-md-4"></div>

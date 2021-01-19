@@ -13,9 +13,8 @@
             </div>
             <div class="modal-body">
                 @foreach ($data['developer'] as $key=>$item)
-                @if ($key==1)
-                <? break ?>
-                @endif
+                @if ($key>1)
+
                 <form method="POST" action="add" class="">
                     <input type="hidden" name="tabel" value="developer">
                     @csrf
@@ -81,6 +80,7 @@
                                             </div>
                                             @endif
                                             @endif
+                                            @endif
                                             @endforeach
                                         </div>
                                     </div>
@@ -131,9 +131,8 @@
             </div>
             <div class="modal-body">
                 @foreach ($data['project'] as $key=>$item)
-                @if ($key==1)
-                <? break ?>
-                @endif
+                @if ($key>1)
+
                 <form method="POST" action="add" class="">
                     @csrf
                     <input type="hidden" name="tabel" value="project">
@@ -219,6 +218,7 @@
                                             </div>
                                             @endif
                                             @endif
+                                            @endif
                                             @endforeach
                                         </div>
                                     </div>
@@ -257,9 +257,8 @@
             </div>
             <div class="modal-body">
                 @foreach ($data['testimonies'] as $key=>$item)
-                @if ($key==1)
-                <? break ?>
-                @endif
+                @if ($key>1)
+
                 <form method="POST" action="add" class="">
                     @csrf
                     <input type="hidden" name="tabel" value="testimonies">
