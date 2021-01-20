@@ -21,7 +21,8 @@
                 <p class="lead fs-6">
                     {{$item->Deskripsi}} <br>Project Dapat di lihat di <a href="{{$item->link}}" class="fs-5">
                         {{$item->link}}</a><br><a href="pas?tabel=project&id={{$item->id}}&view=editproject"
-                        class="btn btn-primary">edit</a>
+                        class="btn btn-primary"><i class="fas fa-user-edit" aria-hidden="true">  Edit</i></a>
+                       <a href="" class="btn btn-danger"><i class="fas fa-trash" aria-hidden="true">  Hapus</i></a>
                 </p>
             </div>
             <div class="col-md-5">
@@ -41,6 +42,7 @@
                     {{$item->Deskripsi}} <br>Project Dapat di lihat di <a href="{{$item->link}}" class="fs-5">
                         {{$item->link}}</a><br><a href="pas?tabel=project&id={{$item->id}}&view=editproject"
                         class="btn btn-primary"><i class="fas fa-user-edit" aria-hidden="true">  Edit</i></a>
+                       <a href="" class="btn btn-danger"><i class="fas fa-trash" aria-hidden="true">  Hapus</i></a>
                 </p>
             </div>
             <div class="col-md-5">

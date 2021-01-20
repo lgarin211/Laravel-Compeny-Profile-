@@ -1,6 +1,85 @@
 {{-- @section('Main') --}}
 <section id="home" class="p-0 h-100vh cursor-light">
-    <h2 class="d-none">try</h2>
+
+
+    <header class="cursor-light">
+        <nav class="navbar navbar-top-default navbar-expand-lg nav-three-circles black bottom-nav nav-box-shadow no-animation">
+            <div class="container-fluid">
+                <a class="logo ml-lg-1" href="https://megaone.acrothemes.com/javascript:void(0)">
+                    <img src="cobain_files/logo.png" alt="logo" title="Logo" class="logo-default">
+                    <img src="cobain_files/logo2.png" alt="logo" title="Logo" class="logo-scrolled">
+                </a>
+                <div class="collapse navbar-collapse d-none d-lg-block">
+                    <ul class="nav navbar-nav mx-auto">
+                        <li class="nav-item"> <a href="https://megaone.acrothemes.com/#home" class="scroll nav-link">Home</a></li>
+                        <li class="nav-item"> <a href="https://megaone.acrothemes.com/#about" class="scroll nav-link">About</a></li>
+                        <li class="nav-item"> <a href="https://megaone.acrothemes.com/#work" class="scroll nav-link">Projek</a></li>
+                        <li class="nav-item"> <a href="https://megaone.acrothemes.com/#pricing" class="scroll nav-link">Info Developer</a></li>
+                        <li class="nav-item"> <a href="https://megaone.acrothemes.com/#clients" class="scroll nav-link">Kerjasama</a></li>
+                        <li class="nav-item"> <a href="https://megaone.acrothemes.com/#blog" class="scroll nav-link">Komentar</a></li>
+                        <li class="nav-item"> <a href="https://megaone.acrothemes.com/#contact" class="scroll nav-link">Kontak</a></li>
+                    </ul>
+                </div>
+                <!-- <a href="https://megaone.acrothemes.com/javascript:void(0)"
+                    class="btn-setting btn-hvr-up btn-hvr-whatsapp color-black mr-lg-3 d-none d-lg-block"><i
+                        class="fab fa-whatsapp"></i> +1 631 112 1134</a> -->
+                <!-- side menu open button -->
+                <a class="menu_bars d-inline-block menu-bars-setting animated-wrap sidemenu_toggle d-block d-lg-none">
+                    <div class="menu-lines animated-element">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+                <!-- Side Menu -->
+            </div>
+        </nav>
+        <!-- side menu open button -->
+        <a class="menu_bars menu-bars-setting animated-wrap sidemenu_toggle d-lg-inline-block d-none">
+            <div class="menu-lines animated-element">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </a>
+        <!-- Side Menu -->
+        <div class="side-menu center">
+            <div class="quarter-circle">
+                <div class="menu_bars2 active" id="btn_sideNavClose">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="inner-wrapper justify-content-center">
+                <div class="col-md-12 text-center">
+                    <a href="https://megaone.acrothemes.com/javascript:void(0)" class="logo-full mb-4"><img src="cobain_files/logo-pure-white.png" alt=""></a>
+                </div>
+                <nav class="side-nav m-0">
+                    <ul class="navbar-nav flex-lg-row">
+                        <li class="nav-item"> <a href="https://megaone.acrothemes.com/#home" class="scroll nav-link">Home</a></li>
+                        <li class="nav-item"> <a href="https://megaone.acrothemes.com/#about" class="scroll nav-link">About</a></li>
+                        <li class="nav-item"> <a href="https://megaone.acrothemes.com/#work" class="scroll nav-link">Projek</a></li>
+                        <li class="nav-item"> <a href="https://megaone.acrothemes.com/#pricing" class="scroll nav-link">Info Developer</a></li>
+                        <li class="nav-item"> <a href="https://megaone.acrothemes.com/#clients" class="scroll nav-link">Kerjasama</a></li>
+                        <li class="nav-item"> <a href="https://megaone.acrothemes.com/#blog" class="scroll nav-link">Komentar</a></li>
+                        <li class="nav-item"> <a href="https://megaone.acrothemes.com/#contact" class="scroll nav-link">Kontak</a></li>
+                    </ul>
+                </nav>
+
+                <div class="side-footer text-white w-100">
+                    <ul class="social-icons-simple">
+                        <li class="side-menu-icons"><a href="https://megaone.acrothemes.com/javascript:void(0)"><i class="fab fa-facebook-f color-white"></i> </a> </li>
+                        <li class="side-menu-icons"><a href="https://megaone.acrothemes.com/javascript:void(0)"><i class="fab fa-instagram color-white"></i> </a> </li>
+                        <li class="side-menu-icons"><a href="https://megaone.acrothemes.com/javascript:void(0)"><i class="fab fa-twitter color-white"></i> </a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <a id="close_side_menu" href="https://megaone.acrothemes.com/javascript:void(0);"></a>
+        <!--Side Menu-->
+    </header>
+
     <!--Main Slider-->
     <div id="rev_slider_8_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="weone" data-source="gallery" style="background:transparent;padding:0px;">
         <!-- START REVOLUTION SLIDER 5.4.8.1 fullscreen mode -->

@@ -29,6 +29,9 @@ Route::get('/admin/te', [ProfileAdmin::class, 'adminFilemanager']);
 Route::get('/admin/like', [ProfileAdmin::class, 'pas']);
 Route::get('/admin/pas', [ProfileAdmin::class, 'linkn']);
 Route::get('/admin/testimonies', [ProfileAdmin::class, 'Testimony']);
+Route::get('/admin/dashboard', function () {
+    return view('admin.dashboard');
+});
 
 Route::post('/admin/pas', [ProfileAdmin::class, 'pas']);
 Route::post('/admin/add', [ProfileAdmin::class, 'add']);
