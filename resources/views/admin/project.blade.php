@@ -1,4 +1,3 @@
-{{-- @dd($data); --}}
 @extends('admin.index')
 @section('pasing')
 @if ( session('cas'))
@@ -11,7 +10,7 @@
 <div class="container shodow-sm">
     <div class="container marketing">
         <!-- START THE FEATURETTES -->
-        @foreach ($data['project'] as $key=>$item)
+        @foreach ($data['gas'] as $key=>$item)
         @if ($key%2==1)
         <hr class="featurette-divider">
 

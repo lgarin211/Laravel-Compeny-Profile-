@@ -14,6 +14,21 @@ use Illuminate\Support\Facades\DB;
 class ProfileAdmin extends Controller
 {
     //
+    public function linkn()
+    {
+        $data = $this->data();
+        unset($data["ORM"], $data['pasing']);
+        $gas = [];
+        foreach ($data[$_GET['tabel']] as $key => $value) {
+            foreach ($value as $dm => $valu) {
+                $tag = '%' . $_GET['key'] . '%';
+                $gas = DB::table($_GET['tabel'])
+                    ->where($dm, 'like', $tag)
+                    ->get();
+                \dump($tag);
+            }
+        }
+    }
     public function pas()
     {
         // \dd($_GET);
@@ -97,7 +112,7 @@ class ProfileAdmin extends Controller
     public function data()
     {
         $data = [];
-        $tabel = ['menu', 'developer', 'project', 'setting', 'users', 'cat_project','views','testimonies'];
+        $tabel = ['menu', 'developer', 'project', 'setting', 'users', 'cat_project', 'views', 'testimonies'];
         foreach ($tabel as $key => $value) {
             $das = DB::table($value)
                 ->orderBy('id', 'desc')
@@ -123,17 +138,17 @@ class ProfileAdmin extends Controller
 
     public function Testimony()
     {
-        $data=$this->data();
+        $data = $this->data();
         // \dd($data);
         return view('admin.testimoni', \compact('data'));
     }
     public function indfer()
     {
         $data = $this->data();
-        $vas= DB::table('views')
-        ->where('active', '=', 1)
-        ->first();
-        $tempalte=$vas->view.'/compeny';
+        $vas = DB::table('views')
+            ->where('active', '=', 1)
+            ->first();
+        $tempalte = $vas->view . '/compeny';
         // \dd($tempalte);
         return view($tempalte, \compact('data'));
     }

@@ -26,7 +26,8 @@ Route::get('/admin/developer', [ProfileAdmin::class, 'adminDev']);
 Route::get('/admin/cp', [ProfileAdmin::class, 'adminCPs']);
 Route::get('/admin/project', [ProfileAdmin::class, 'adminproject']);
 Route::get('/admin/te', [ProfileAdmin::class, 'adminFilemanager']);
-Route::get('/admin/pas', [ProfileAdmin::class, 'pas']);
+Route::get('/admin/like', [ProfileAdmin::class, 'pas']);
+Route::get('/admin/pas', [ProfileAdmin::class, 'linkn']);
 Route::get('/admin/testimonies', [ProfileAdmin::class, 'Testimony']);
 
 Route::post('/admin/pas', [ProfileAdmin::class, 'pas']);
