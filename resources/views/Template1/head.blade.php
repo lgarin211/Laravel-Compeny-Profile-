@@ -28,8 +28,8 @@
     <link rel="stylesheet" href="{{asset('asset3')}}/bundle.css">
     <!-- Plugin Css -->
     <link rel="stylesheet" href="{{asset('asset3')}}/jquery.css">
-    <link rel="stylesheet" href="{{asset('asset3')}}/owl.carousel.min.css">
-    <link rel="stylesheet" href="{{asset('asset3')}}/owl.carousel.theme.min.css">
+    <link rel="stylesheet" href="{{asset('asset3')}}/owl.css">
+    <link rel="stylesheet" href="{{asset('asset3')}}/owl_002.css">
     <link rel="stylesheet" href="{{asset('asset3')}}/swiper.css">
 
     <link rel="stylesheet" href="{{asset('asset3')}}/cubeportfolio.css">
