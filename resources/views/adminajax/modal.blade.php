@@ -106,8 +106,8 @@
 {{-- Section search --}}
 @section('modaldevelopersrc')
 <div class="input-group mb-3">
-    <input type="text" id="key" class="form-control" onkeyup="domdom()" placeholder="cari"
-        aria-label="Recipient's username" aria-describedby="button-addon2">
+    <input type="text" class="form-control" placeholder="cari" aria-label="Recipient's username"
+        aria-describedby="button-addon2">
     <button class="btn btn-outline-secondary" type="button" id="button-addon2">Cari</button>
 </div>
 @endsection
@@ -130,8 +130,8 @@
             <div class="modal-body">
                 @foreach ($data['project'] as $key=>$item)
                 <form method="POST" action="add" class="">
-                    <input type="hidden" name="tabel" value="project">
                     @csrf
+                    <input type="hidden" name="tabel" value="project">
                     <div class="card mb-3">
                         <div class="row g-0">
                             <div class="col-md-4">

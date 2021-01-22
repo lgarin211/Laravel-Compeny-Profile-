@@ -3,14 +3,13 @@
 
 <section class="container">
     <div class="row">
-        <div class="col-md-4">
-        @include('admin.modal')
+        <div class="col-md-4 mb-2">
+            @include('admin.modal')
             @yield('modalTestimony')
         </div>
         <div class="col-md-4"></div>
         <div class="col-md-4">
-            <input type="text" class="form-control" placeholder="cari" aria-label="Recipient's username"
-                aria-describedby="button-addon2">
+            @yield('modaldevelopersrc')
         </div>
     </div>
 
@@ -26,7 +25,7 @@
                     <th scope="col">Tindakan</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="pas">
                 @foreach ($data['testimonies'] as $item)
                 <tr>
                     <td>{{$item->id}}</td>
@@ -40,8 +39,7 @@
                     </td>
                     <td>
                         <div class="row">
-                            <a href="pas?tabel=testimonies&id={{$item->id}}&view=edittestimoni" type="button"
-                                class="btn btn-danger col-md-6">
+                            <a href="pas?tabel=testimonies&id={{$item->id}}&view=edittestimoni" type="button" class="btn btn-danger col-md-6">
                                 <i class="fas fa-user-edit" aria-hidden="true"></i>
                             </a>
                             <button type="button" class="btn btn-success col-md-6">
@@ -57,4 +55,20 @@
     <button type="button" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"> Hapus</i>
     </button>
 </section>
+<input type="hidden" id="nosi" value="{{asset('')}}admin/like?tabel=testimonies&key=">
+<script>
+    // const as=document.querySelector('.fint_JUDUL_BUKU');
+    var base_url = document.getElementById('nosi').value;
+    //event add
+    function domdom() {
+        var keywpr = document.getElementById('key');
+        var contain = document.getElementById('pas');
+        var link_query = base_url + keywpr.value
+        fetch(link_query)
+            .then((response) => response.text())
+            .then((response) => (contain.innerHTML = response));
+        // val ajax Kurian WPU Eps13
+
+    }
+</script>
 @endsection

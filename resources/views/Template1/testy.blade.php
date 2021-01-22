@@ -37,18 +37,17 @@
                         <div class="testimonial-item">
                             <p class="color-black testimonial-para mb-15px"> . </p>
                             <div class="testimonial-post">
-                                <a href="https://megaone.acrothemes.com/javascript:void(0)" class="posting"><img
-                                        src="{{$item->Gambar}}" class="look" alt="image" ></a>
-                                <div class="text-content">
-                                    <h5 class="color-black text-capitalize">{{$item->Nama}}</h5>
-                                    <p class="color-grey"> {{$item->Deskripsi}}</p>
-                                    {{-- <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div> --}}
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <a href="https://megaone.acrothemes.com/javascript:void(0)" class="posting">
+                                            <img src="{{$item->Gambar}}" class="look" class="rounded-circle"
+                                                alt="image">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 text-content">
+                                        <h5 class="color-black text-capitalize">{{$item->Nama}}</h5>
+                                        <p class="color-grey"> {{$item->Deskripsi}}</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

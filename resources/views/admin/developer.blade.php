@@ -16,7 +16,7 @@
         @yield('modaldevelopersrc')
     </div>
 </div>
-<div class="container shodow-sm">
+<div id="pas" class="container shodow-sm">
     @foreach ($data['developer'] as $item)
     <div class="card mb-3">
         <div class="row g-0">
@@ -46,4 +46,21 @@
     </div>
     @endforeach
 </div>
+<input type="hidden" id="nosi" value="{{asset('')}}admin/like?tabel=developer&key=">
+<script>
+    // const as=document.querySelector('.fint_JUDUL_BUKU');
+    var base_url = document.getElementById('nosi').value;
+
+    //event add
+    function domdom() {
+        var keywpr = document.getElementById('key');
+        var contain = document.getElementById('pas');
+        var link_query = base_url + keywpr.value
+        fetch(link_query)
+            .then((response) => response.text())
+            .then((response) => (contain.innerHTML = response));
+        // val ajax Kurian WPU Eps13
+
+    }
+</script>
 @endsection

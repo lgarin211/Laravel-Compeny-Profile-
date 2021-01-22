@@ -4,18 +4,25 @@
         <div class="row">
             <div class="col-md-12 col-sm-12 text-center">
                 <ul class="footer-icons mb-4">
-                    <li><a href="{{asset('')}}javascript:void(0)" class="wow fadeInUp facebook"><i class="fab fa-facebook-f"></i>
+                    <li><a href="{{asset('')}}javascript:void(0)" class="wow fadeInUp facebook"><i
+                                class="fab fa-facebook-f"></i>
                         </a> </li>
-                    <li><a href="{{asset('')}}javascript:void(0)" class="wow fadeInDown twitter"><i class="fab fa-twitter"></i>
+                    <li><a href="{{asset('')}}javascript:void(0)" class="wow fadeInDown twitter"><i
+                                class="fab fa-twitter"></i>
                         </a> </li>
-                    <li><a href="{{asset('')}}javascript:void(0)" class="wow fadeInUp google"><i class="fab fa-google"></i> </a>
+                    <li><a href="{{asset('')}}javascript:void(0)" class="wow fadeInUp google"><i
+                                class="fab fa-google"></i> </a>
                     </li>
-                    <li><a href="{{asset('')}}javascript:void(0)" class="wow fadeInDown linkedin"><i class="fab fa-linkedin-in"></i> </a> </li>
-                    <li><a href="{{asset('')}}javascript:void(0)" class="wow fadeInUp instagram"><i class="fab fa-instagram"></i>
+                    <li><a href="{{asset('')}}javascript:void(0)" class="wow fadeInDown linkedin"><i
+                                class="fab fa-linkedin-in"></i> </a> </li>
+                    <li><a href="{{asset('')}}javascript:void(0)" class="wow fadeInUp instagram"><i
+                                class="fab fa-instagram"></i>
                         </a> </li>
-                    <li><a href="{{asset('')}}javascript:void(0)" class="wow fadeInDown pinterest"><i class="fab fa-pinterest-p"></i> </a> </li>
+                    <li><a href="{{asset('')}}javascript:void(0)" class="wow fadeInDown pinterest"><i
+                                class="fab fa-pinterest-p"></i> </a> </li>
                 </ul>
-                <p class="copyrights mt-2 mb-2">© 2020 MegaOne. Made with love by <a href="{{asset('')}}javascript:void(0)">themesindustry</a></p>
+                <p class="copyrights mt-2 mb-2">© 2020 MegaOne. Made with love by <a
+                        href="{{asset('')}}javascript:void(0)">themesindustry</a></p>
             </div>
         </div>
     </div>
@@ -30,49 +37,48 @@
 </div>
 <!--Animated Cursor End-->
 <div>
+    <!--Animated Cursor End-->
+
     <!-- JavaScript -->
-    <script src="{{asset('asset3')}}/bundle.js"></script>
+    <script src="https://megaone.acrothemes.com/vendor/js/bundle.min.js"></script>
 
     <!-- Plugin Js -->
-    <script src="{{asset('asset3')}}/jquery.js"></script>
-    <script src="{{asset('asset3')}}/owl.js"></script>
-    <script src="{{asset('asset3')}}/swiper.js"></script>
-    <script src="{{asset('asset3')}}/jquery_002.js"></script>
-    <script src="{{asset('asset3')}}/jquery_003.js"></script>
-    <script src="{{asset('asset3')}}/parallaxie.js"></script>
-    <script src="{{asset('asset3')}}/wow.js"></script>
+    <script src="https://megaone.acrothemes.com/vendor/js/jquery.fancybox.min.js"></script>
+    <script src="https://megaone.acrothemes.com/vendor/js/owl.carousel.min.js"></script>
+    <script src="https://megaone.acrothemes.com/vendor/js/swiper.min.js"></script>
+    <script src="https://megaone.acrothemes.com/vendor/js/jquery.cubeportfolio.min.js"></script>
+    <script src="https://megaone.acrothemes.com/vendor/js/jquery.appear.js"></script>
+    <script src="https://megaone.acrothemes.com/vendor/js/parallaxie.min.js"></script>
+    <script src="https://megaone.acrothemes.com/vendor/js/wow.min.js"></script>
     <!-- Owl Carousel JS File -->
-    <script src="{{asset('asset3')}}/owl_002.js"></script>
+    <script src="https://megaone.acrothemes.com/creative-studio/js/owl.carousel.js"></script>
     <!-- Slick JS File -->
-    <script src="{{asset('asset3')}}/slick.js"></script>
+    <script src="https://megaone.acrothemes.com/vendor/js/slick.min.js"></script>
     <!-- Tween Max Animation File -->
-    <script src="{{asset('asset3')}}/TweenMax.js"></script>
+    <script src="https://megaone.acrothemes.com/creative-studio/js/TweenMax.min.js"></script>
     <!-- Morphtext File -->
-    <script src="{{asset('asset3')}}/morphext.js"></script>
+    <script src="https://megaone.acrothemes.com/creative-studio/js/morphext.min.js"></script>
     <!-- REVOLUTION JS FILES -->
-    <script src="{{asset('asset3')}}/jquery_004.js"></script>
-    <script src="{{asset('asset3')}}/jquery_005.js"></script>
+    <script src="https://megaone.acrothemes.com/vendor/js/jquery.themepunch.tools.min.js"></script>
+    <script src="https://megaone.acrothemes.com/vendor/js/jquery.themepunch.revolution.min.js"></script>
     <!-- SLIDER REVOLUTION EXTENSIONS -->
-    <script src="{{asset('asset3')}}/revolution.js"></script>
-    <script src="{{asset('asset3')}}/revolution_002.js"></script>
-    <script src="{{asset('asset3')}}/revolution_003.js"></script>
-    <script src="{{asset('asset3')}}/revolution_004.js">
+    <script src="https://megaone.acrothemes.com/vendor/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="https://megaone.acrothemes.com/vendor/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="https://megaone.acrothemes.com/vendor/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="https://megaone.acrothemes.com/vendor/js/extensions/revolution.extension.layeranimation.min.js">
     </script>
-    <script src="{{asset('asset3')}}/revolution_005.js">
-    </script>
-    <script src="{{asset('asset3')}}/revolution_006.js">
-    </script>
-    <script src="{{asset('asset3')}}/revolution_007.js"></script>
-    <script src="{{asset('asset3')}}/revolution_008.js">
-    </script>
-    <script src="{{asset('asset3')}}/revolution_009.js"></script>
+    <script src="https://megaone.acrothemes.com/vendor/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="https://megaone.acrothemes.com/vendor/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="https://megaone.acrothemes.com/vendor/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="https://megaone.acrothemes.com/vendor/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="https://megaone.acrothemes.com/vendor/js/extensions/revolution.extension.video.min.js"></script>
 
     <!-- Google Map Api -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgIfLQi8KTxTJahilcem6qHusV-V6XXjw"></script>
-    <script src="{{asset('asset3')}}/maps.js"></script>
+    <script src="https://megaone.acrothemes.com/creative-studio/js/maps.min.js"></script>
 
     <!-- custom script -->
-    <script src="{{asset('asset3')}}/script.js"></script>
+    <script src="https://megaone.acrothemes.com/creative-studio/js/script.js"></script>
 </div>
 </body>
 

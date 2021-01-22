@@ -16,18 +16,19 @@ class ProfileAdmin extends Controller
     //
     public function linkn()
     {
-        $data = $this->data();
-        unset($data["ORM"], $data['pasing']);
-        $gas = [];
-        foreach ($data[$_GET['tabel']] as $key => $value) {
-            foreach ($value as $dm => $valu) {
-                $tag = '%' . $_GET['key'] . '%';
-                $gas = DB::table($_GET['tabel'])
-                    ->where($dm, 'like', $tag)
-                    ->get();
-                \dump($tag);
+        $mas = DB::table($_GET['tabel'])->first();
+        $dat = DB::table($_GET['tabel']);
+        $tag = '%' . $_GET['key'] . '%';
+        foreach ($mas as $key => $value) {
+            if ($key == 'id') {
+                $dat->where($key, 'like', $tag);
+            } else {
+                $dat->orwhere($key, 'like', $tag);
             }
         }
+        $data[$_GET['tabel']] = $dat->orderBy('id', 'desc')->get();
+        // \dd($data);
+        return view('adminajax.' . $_GET['tabel'], \compact('data'));
     }
     public function pas()
     {
@@ -58,6 +59,7 @@ class ProfileAdmin extends Controller
     }
     public function add()
     {
+        // dd($_POST);
         $tabel = $_POST['tabel'];
         unset($_POST['_token'], $_POST['tabel']);
         // dd($_POST);

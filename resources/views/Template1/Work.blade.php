@@ -1,4 +1,3 @@
-
 <section id="work" class="pb-0">
     <div class="container-fluid">
         <div class="row">
@@ -10,7 +9,6 @@
             </div>
         </div>
         <div class="row d-block">
-
             <div id="js-filters-mosaic-flat" class="cbp-l-filters-alignCenter">
                 <div data-filter="*" class="cbp-filter-item-active cbp-filter-item cbp-filter-style">
                     All <div class="cbp-filter-counter"></div>
@@ -24,13 +22,13 @@
 
             </div>
 
-            <div id="js-grid-mosaic-flat" class="cbp cbp-l-grid-mosaic-flat no-transition">
+            <div id="js-grid-mosaic-flat" class="row cbp cbp-l-grid-mosaic-flat no-transition">
                 @foreach ($data['project'] as $item)
-                <div class="cbp-item @foreach ($item->filter as $is){{$is.' '}}@endforeach">
-
-                    <a href="{{$item->Img}}" class="cbp-caption cbp-lightbox" data-title="{{$item->Deskripsi}}Project Dapat di lihat di {{$item->link}}">
+                <div class="col-md-6 cbp-item @foreach ($item->filter as $is){{$is.' '}}@endforeach">
+                    <a href="{{$item->Img}}" class="cbp-caption cbp-lightbox"
+                        data-title="{{$item->Deskripsi}}Project Dapat di lihat di {{$item->link}}">
                         <div class="cbp-caption-defaultWrap">
-                            <img src="{{$item->Img}}" alt="work" style="max-width: min-content; max-height: 400px;">
+                            <img src="{{$item->Img}}" alt="work">
                         </div>
                         <div class="cbp-caption-activeWrap">
                             <div class="cbp-l-caption-alignCenter">
@@ -50,4 +48,3 @@
         </div>
     </div>
 </section>
-
