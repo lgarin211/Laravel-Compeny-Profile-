@@ -1,5 +1,5 @@
 <section id="team" class="bg-light-gray">
-    <div class="container">
+    
         <div class="row">
             <div class="col-md-12">
                 <div class="main-title wow fadeIn" data-wow-delay="300ms">
@@ -8,10 +8,10 @@
                 </div>
             </div>
         </div>
-        <div class="row wow fadeInUp team" data-wow-delay="300">
+        {{-- <div class="row wow fadeInUp team" data-wow-delay="300">
             @foreach ($data['developer'] as $item)
-            <div class=" p-0 team-col mx-auto">
-                <div class="team-image">
+            <div class="cards p-0 team-col mx-auto">
+                <div class="  team-image">
                     <img src="{{$item->Poster}}" alt="team1" class="m-image1">
                 </div>
                 <div class="team-classic-content hvr-team pink">
@@ -38,5 +38,23 @@
                 </div>
             </div>
             @endforeach
+        </div> --}}
+
+        <div class="container">
+            <div class="induk-team">
+                <div class="wrapper-induk">
+                    <div class="team-panel">
+
+                        <div class="team-img">
+                            <img src="">image cuy
+                        </div>
+                        <div class="team-name">
+                            <div class="text">text cuy</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
+
 </section>
