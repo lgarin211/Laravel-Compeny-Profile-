@@ -10,7 +10,7 @@
         </div>
         <div class="row wow fadeInUp team" data-wow-delay="300">
             @foreach ($data['developer'] as $item)
-            <div class="col-xl-3 p-0 team-col mx-auto">
+            <div class=" p-0 team-col mx-auto">
                 <div class="team-image">
                     <img src="{{$item->Poster}}" alt="team1" class="m-image1">
                 </div>
