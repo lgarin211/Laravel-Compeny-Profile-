@@ -3,7 +3,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 <script>
-    var route_prefix = "/filemanager";
+    var route_prefix = "http://192.168.88.153/CODE/Company-PP/public/filemanager";
 </script>
 
 <!-- CKEditor init -->

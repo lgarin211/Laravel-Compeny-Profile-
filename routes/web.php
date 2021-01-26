@@ -29,6 +29,9 @@ Route::get('/admin/te', [ProfileAdmin::class, 'adminFilemanager']);
 Route::get('/admin/like', [ProfileAdmin::class, 'linkn']);
 Route::get('/admin/pas', [ProfileAdmin::class, 'pas']);
 Route::get('/admin/testimonies', [ProfileAdmin::class, 'Testimony']);
+Route::get('/admin/servides', [ProfileAdmin::class, 'servide']);
+Route::get('/admin/q_a_s', [ProfileAdmin::class, 'q_a_s']);
+Route::get('/admin/cliens', [ProfileAdmin::class, 'cliens']);
 Route::get('/admin/dashboard', function () {
     return view('admin.dashboard');
 });

@@ -26,6 +26,15 @@
         <a class="nav-link" href="testimonies">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Testimoni</span></a>
+        <a class="nav-link" href="servides">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Service</span></a>
+        <a class="nav-link" href="cliens">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Cliens</span></a>
+        <a class="nav-link" href="q_a_s">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Q&S</span></a>
         <a class="nav-link" href="setting">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Setting</span></a>

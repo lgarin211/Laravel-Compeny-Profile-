@@ -15,6 +15,7 @@ return [
     |--------------------------------------------------------------------------
      */
 
+    'url_prefix'=>'http://192.168.88.153/CODE/Company-PP/public/',
     'use_package_routes'       => true,
 
     /*

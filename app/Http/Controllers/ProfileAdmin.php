@@ -70,6 +70,7 @@ class ProfileAdmin extends Controller
     {
         $data = $this->data();
         // dd($data);
+
         return view('admin/setting', \compact('data'));
     }
     public function adminFilemanager()
@@ -90,6 +91,28 @@ class ProfileAdmin extends Controller
         // dd($data);
         return view('admin/developer', \compact('data'));
     }
+
+    public function servide()
+    {
+        $data = $this->data();
+        // dd($data);
+        return view('admin/Servide', \compact('data'));
+    }
+
+    public function q_a_s()
+    {
+        $data = $this->data();
+        // dd($data);
+        return view('admin/q_a_s', \compact('data'));
+    }
+
+    public function cliens()
+    {
+        $data = $this->data();
+        // dd($data);
+        return view('admin/cliens', \compact('data'));
+    }
+
     public function adminCPs()
     {
         $data = $this->data();
@@ -114,7 +137,7 @@ class ProfileAdmin extends Controller
     public function data()
     {
         $data = [];
-        $tabel = ['menu', 'developer', 'project', 'setting', 'users', 'cat_project', 'views', 'testimonies'];
+        $tabel = ['menu', 'developer', 'project', 'setting', 'users', 'cat_project', 'views', 'testimonies', 'cliens', 'q_a_s', 'servides'];
         foreach ($tabel as $key => $value) {
             $das = DB::table($value)
                 ->orderBy('id', 'desc')
