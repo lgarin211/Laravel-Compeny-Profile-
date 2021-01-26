@@ -21,6 +21,8 @@
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" />
 
+        {{-- bantuan kak Aldi --}}
+        <link href="{{asset('asset3')}}/app.scss" rel="stylesheet">
     {{-- customcss --}}
     <link href="{{asset('asset3')}}/style.css" rel="stylesheet" type="text/css">
 
