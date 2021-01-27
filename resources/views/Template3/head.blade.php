@@ -14,14 +14,10 @@
     <link href="{{asset('assetsArsha')}}/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link href="{{asset('assetsArsha')}}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{asset('assetsArsha')}}/vendor/icofont/icofont.min.css" rel="stylesheet">
     <link href="{{asset('assetsArsha')}}/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -54,7 +50,8 @@
 
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
-                    @foreach ($data['menu'] as $key=>$item)
+                    <? ?>
+                    @foreach (array_reverse($data['menu']) as $key=>$item)
                     @if ($key==0)
                     <li class="active"><a href="{{$item->link}}">{{$item->Name_Menu}}</a></li>
                     @else
@@ -65,8 +62,7 @@
                 </ul>
             </nav><!-- .nav-menu -->
 
-            <a href="https://wa.me/{{$data['pasing']['Contak_Whatapps']}}?text=Hallo Customer Bonet Saya hendak bertanya Prihal ..."
-                class="get-started-btn scrollto">Free Contak</a>
+            <a href="https://wa.me/{{$data['pasing']['Contak_Whatapps']}}?text=Hallo Customer Bonet Saya hendak bertanya Prihal ..." class="get-started-btn scrollto">Free Contak</a>
 
         </div>
     </header><!-- End Header -->

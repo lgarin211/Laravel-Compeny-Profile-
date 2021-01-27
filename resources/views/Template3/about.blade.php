@@ -7,7 +7,7 @@
         </div>
 
         <div class="row text-center">
-            <div class="col-lg-12" id="man" style="height: 200px;">
+            <div class="col-lg-12" id="man" >
                 <p>
                     {{$data['pasing']['text_about']}}
                 </p>

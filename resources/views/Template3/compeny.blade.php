@@ -26,20 +26,20 @@
 {{-- @include('Template3.cta') --}}
 <!-- End Cta Section -->
 
-<!-- ======= Portfolio Section ======= -->
-@include('Template3.portofolio')
-<!-- End Portfolio Section -->
 
 <!-- ======= Team Section ======= -->
 @include('Template3.team')
 <!-- End Team Section -->
+<!-- ======= Portfolio Section ======= -->
+@include('Template3.portofolio')
+<!-- End Portfolio Section -->
 
 <!-- ======= Pricing Section ======= -->
 {{-- @include('Template3.pricing') --}}
 <!-- End Pricing Section -->
 
 <!-- ======= Frequently Asked Questions Section ======= -->
-@include('Template3.frekuenly')
+{{-- @include('Template3.frekuenly') --}}
 <!-- End Frequently Asked Questions Section -->
 
 <!-- ======= Contact Section ======= -->

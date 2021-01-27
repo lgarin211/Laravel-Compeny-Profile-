@@ -1,3 +1,4 @@
+{{-- @dd($data); --}}
 @extends('admin.index')
 @section('pasing')
 @if ( session('cas'))
@@ -8,7 +9,7 @@
 <div class="row">
     <div class="col-md-4 mb-2">
         @include('admin.modal')
-        @yield('modalmenu')
+        @yield('modalcat')
     </div>
     <div class="col-md-4"></div>
     <div class="col-md-4">
@@ -18,21 +19,19 @@
 <div id="pas" class="container shodow-sm">
     <div class="container marketing">
         <!-- START THE FEATURETTES -->
-        @foreach ($data['menu'] as $key=>$item)
+        @foreach ($data['cat_project'] as $key=>$item)
         <div class="card">
             <div class="row text-center">
-                <div class="Q col-md-6 row">
-                    <h4>Menu :</h4>
-                    <small>{{$item->Name_Menu}}</small>
+                <div class="Q col-md-6">
+                    <h3>Nama Filter:</h3>
+                    <p>{{$item->Nama_Filter}}</p>
                 </div>
-                <div class="A col-md-6 row">
-                    <h4>link :</h4>
-                    <small><a href="{{ asset('') }}/{{$item->link}}">{{ asset('') }}/{{$item->link}}</a></small>
+                <div class="A col-md-6">
+                    <h3>LINK Filter:</h3>
+                    <p>{{$item->Link_Filter}}</p>
                 </div>
                 <div class="col-md-12">
-                    <a href="pas?tabel=menu&id={{$item->id}}&view=editmenu" class="btn btn-primary"><i
-                            class="fas fa-user-edit" aria-hidden="true"> Edit</i></a>
-                    <a href="" class="btn btn-danger"><i class="fas fa-trash" aria-hidden="true"> Hapus</i></a>
+                    <a href="del?tabel=cat_project&id={{$item->id}}"  class="btn btn-danger"><i class="fas fa-trash" aria-hidden="true"> Hapus</i></a>
                 </div>
             </div>
         </div>

@@ -1,4 +1,3 @@
-
 <!-- ======= Portfolio Section ======= -->
 <section id="portfolio" class="portfolio">
     <div class="container" data-aos="fade-up">
@@ -9,15 +8,12 @@
                 sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
                 ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
-
-        <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
+        <ul id="portfolio-flters" class="container  row d-flex justify-content-center text-center" data-aos="fade-up"
+            data-aos-delay="100">
+            <li data-filter="*" class="filter-active col-sm-4">All</li>
             @foreach ($data['cat_project'] as $item)
-
-            <li data-filter=".{{$item->Nama_Filter}}">{{$item->Nama_Filter}}</li>
-             @endforeach
-
-
+            <li data-filter=".{{$item->Nama_Filter}}" class="col-md-4">{{$item->Nama_Filter}}</li>
+            @endforeach
         </ul>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
@@ -30,7 +26,9 @@
                 <div class="portfolio-info">
                     <h4>{{$item->Name_Project}}</h4>
                     <p>{{$item->Pemesan}}</p>
-                    <p>{{$item->Deskripsi}}</p>
+                    <p>@foreach ($item->filter as $it)
+                        {{$it.' '}}
+                        @endforeach</p>
                     <a href="{{$item->Img}}" data-gall="portfolioGallery" class="venobox preview-link"
                         title="{{$item->Name_Project}}"><i class="bx bx-plus"></i></a>
                     <a href="portfolio-details.html" class="details-link" title="More Details"><i

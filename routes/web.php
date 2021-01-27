@@ -21,6 +21,7 @@ use Illuminate\Support\Facades\Route;
 // byagus
 Route::get('/pos', [ProfileAdmin::class, 'data']);
 Route::get('/', [ProfileAdmin::class, 'indfer']);
+Route::group(['middleware' => ['auth']], function () {
 Route::get('/admin/setting', [ProfileAdmin::class, 'adminSetting']);
 Route::get('/admin/developer', [ProfileAdmin::class, 'adminDev']);
 Route::get('/admin/cp', [ProfileAdmin::class, 'adminCPs']);
@@ -41,6 +42,8 @@ Route::get('/admin/dashboard', function () {
 
 Route::post('/admin/pas', [ProfileAdmin::class, 'pas']);
 Route::post('/admin/add', [ProfileAdmin::class, 'add']);
+});
+
 
 
 
