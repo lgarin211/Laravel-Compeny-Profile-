@@ -69,18 +69,25 @@
         <div id="edit">
             <div class="row">
                 @foreach ($data['setting'] as $key=>$item)
+                @if ($item->Attribut=='id')
+                @else
                 <div class="col-md-12 mb-1">
-                    <form method="POST" action="pas" class="card ">
+                    <form method="POST" action="pas" class="card">
                         @csrf
                         <div class="input-group">
+                            <a href="del?tabel=setting&id={{$item->id}}" type="button" class="btn btn-success">
+                                <i class="fas fa-trash" aria-hidden="true"></i>
+                            </a>
                             <span class="input-group-text">{{$item->Attribut}}</span>
                             <input type="hidden" name="tabel" value="setting">
                             <input type="hidden" name="id" value="{{$item->id}}">
-                            <textarea class="form-control" aria-label="With textarea" name="name" style="max-height: 100px">{{$item->Name}}</textarea>
+                            <textarea class="form-control" aria-label="With textarea" name="name"
+                                style="max-height: 100px">{{$item->Name}}</textarea>
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
                     </form>
                 </div>
+                @endif
                 @endforeach
             </div>
         </div>

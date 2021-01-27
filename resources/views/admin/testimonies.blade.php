@@ -42,9 +42,9 @@
                             <a href="pas?tabel=testimonies&id={{$item->id}}&view=edittestimoni" type="button" class="btn btn-danger col-md-6">
                                 <i class="fas fa-user-edit" aria-hidden="true"></i>
                             </a>
-                            <button type="button" class="btn btn-success col-md-6">
+                            <a href="del?tabel=testimonies&id={{$item->id}}" type="button" class="btn btn-success col-md-6">
                                 <i class="fas fa-trash" aria-hidden="true"></i>
-                            </button>
+                            </a>
                         </div>
                     </td>
                 </tr>

@@ -17,9 +17,15 @@
         <a class="nav-link" href="dashboard">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
+        <a class="nav-link" href="menu">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>MENU</span></a>
         <a class="nav-link" href="developer">
             <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Developer</span></a>
+            <span>Team</span></a>
+        <a class="nav-link" href="cat_project">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Filter Project</span></a>
         <a class="nav-link" href="project">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Project</span></a>
@@ -28,7 +34,7 @@
             <span>Testimoni</span></a>
         <a class="nav-link" href="servides">
             <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Service</span></a>
+            <span>Layanan Kami</span></a>
         <a class="nav-link" href="cliens">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Cliens</span></a>

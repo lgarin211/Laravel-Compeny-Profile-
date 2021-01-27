@@ -19,7 +19,9 @@
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
     <link href="{{asset('assetsArsha')}}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{asset('assetsArsha')}}/vendor/icofont/icofont.min.css" rel="stylesheet">
     <link href="{{asset('assetsArsha')}}/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -30,6 +32,7 @@
 
     <!-- Template Main CSS File -->
     <link href="{{asset('assetsArsha')}}/css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0e70351f42.js" crossorigin="anonymous"></script>
 
     <!-- =======================================================
   * Template Name: Arsha - v3.0.3
@@ -45,42 +48,25 @@
     <header id="header" class="fixed-top ">
         <div class="container d-flex align-items-center">
 
-            <h1 class="logo me-auto"><a href="/"><img
-                        src="{{$data['pasing']['LOGO']}}"
-                        alt="" width="auto"></a></h1>
+            <h1 class="logo me-auto"><a href="/"><img src="{{$data['pasing']['LOGO']}}" alt="" width="auto"></a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li class="drop-down"><a href="">Drop Down</a>
-                        <ul>
-                            <li><a href="#">Drop Down 1</a></li>
-                            <li class="drop-down"><a href="#">Deep Drop Down</a>
-                                <ul>
-                                    <li><a href="#">Deep Drop Down 1</a></li>
-                                    <li><a href="#">Deep Drop Down 2</a></li>
-                                    <li><a href="#">Deep Drop Down 3</a></li>
-                                    <li><a href="#">Deep Drop Down 4</a></li>
-                                    <li><a href="#">Deep Drop Down 5</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Drop Down 2</a></li>
-                            <li><a href="#">Drop Down 3</a></li>
-                            <li><a href="#">Drop Down 4</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#contact">Contact</a></li>
+                    @foreach ($data['menu'] as $key=>$item)
+                    @if ($key==0)
+                    <li class="active"><a href="{{$item->link}}">{{$item->Name_Menu}}</a></li>
+                    @else
+                    <li class=""><a href="{{$item->link}}">{{$item->Name_Menu}}</a></li>
+                    @endif
+                    @endforeach
 
                 </ul>
             </nav><!-- .nav-menu -->
 
-            <a href="https://wa.me/{{$data['pasing']['Contak_Whatapps']}}?text=Hallo Customer Bonet Saya hendak bertanya Prihal ..." class="get-started-btn scrollto">Free Contak</a>
+            <a href="https://wa.me/{{$data['pasing']['Contak_Whatapps']}}?text=Hallo Customer Bonet Saya hendak bertanya Prihal ..."
+                class="get-started-btn scrollto">Free Contak</a>
 
         </div>
     </header><!-- End Header -->

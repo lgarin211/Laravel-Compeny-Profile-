@@ -31,7 +31,10 @@ Route::get('/admin/pas', [ProfileAdmin::class, 'pas']);
 Route::get('/admin/testimonies', [ProfileAdmin::class, 'Testimony']);
 Route::get('/admin/servides', [ProfileAdmin::class, 'servide']);
 Route::get('/admin/q_a_s', [ProfileAdmin::class, 'q_a_s']);
+Route::get('/admin/menu', [ProfileAdmin::class, 'menu']);
+Route::get('/admin/cat_project', [ProfileAdmin::class, 'cat_project']);
 Route::get('/admin/cliens', [ProfileAdmin::class, 'cliens']);
+Route::get('/admin/del', [ProfileAdmin::class, 'del']);
 Route::get('/admin/dashboard', function () {
     return view('admin.dashboard');
 });

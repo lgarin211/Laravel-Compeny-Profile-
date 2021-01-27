@@ -37,7 +37,8 @@
                     </p>
                     <p class="card-text">About : {{$item->Deskripsi}}</p>
                     <p class="card-text"><small class="text-muted">
-                            <a href="pas?tabel=developer&id={{$item->id}}&view=editdeveloper" class="btn btn-primary">edit</a>
+                        <a href="pas?tabel=developer&id={{$item->id}}&view=editdeveloper" class="btn btn-primary">edit</a>
+                        <a href="del?tabel=developer&id={{$item->id}}" class="btn btn-danger">HAPUS</a>
                         </small>
                     </p>
                 </div>

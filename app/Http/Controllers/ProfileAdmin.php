@@ -92,11 +92,24 @@ class ProfileAdmin extends Controller
         return view('admin/developer', \compact('data'));
     }
 
+    public function cat_project()
+    {
+        $data = $this->data();
+        // dd($data);
+        return view('admin/cat_project', \compact('data'));
+    }
+    public function menu()
+    {
+        $data = $this->data();
+        // dd($data);
+        return view('admin/menu', \compact('data'));
+    }
+
     public function servide()
     {
         $data = $this->data();
         // dd($data);
-        return view('admin/Servide', \compact('data'));
+        return view('admin/servides', \compact('data'));
     }
 
     public function q_a_s()
@@ -134,6 +147,11 @@ class ProfileAdmin extends Controller
         return $das;
     }
 
+    public function del()
+    {
+        DB::table($_GET['tabel'])->where('id', '=', $_GET['id'])->delete();
+        return redirect('/admin/' . $_GET['tabel'])->with('cas', 'Data Berhasil Di Hapus!');
+    }
     public function data()
     {
         $data = [];
@@ -165,7 +183,7 @@ class ProfileAdmin extends Controller
     {
         $data = $this->data();
         // \dd($data);
-        return view('admin.testimoni', \compact('data'));
+        return view('admin.testimonies', \compact('data'));
     }
     public function indfer()
     {
