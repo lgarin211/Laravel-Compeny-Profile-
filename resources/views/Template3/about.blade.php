@@ -29,10 +29,9 @@
                 </ul>
             </div>
         </div>
-
     </div>
 
-    <script>
+    {{-- <script>
        var man= document.getElementById('man').innerHTML
         var men=document.getElementById('men').innerHTML
         document.getElementById('men').innerHTML=''
@@ -50,6 +49,6 @@ i=0
             }
 
         }, 8000);
-    </script>
+    </script> --}}
 
 </section><!-- End About Us Section -->
