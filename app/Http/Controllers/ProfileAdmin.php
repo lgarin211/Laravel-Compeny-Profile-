@@ -21,10 +21,10 @@ $find = asset('');
 $replace ="";
     if (!empty($_POST)) {
         foreach ($_POST as $key => $value) {
-            $mas[$key]=str_replace($find,$replace,$value);
+            $_POST[$key]=str_replace($find,$replace,$value);
             }
         }
-        dd($mas);
+        // dd($mas);
     }
     public function linkn()
     {
