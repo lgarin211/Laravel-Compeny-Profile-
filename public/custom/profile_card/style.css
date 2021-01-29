@@ -16,7 +16,7 @@ body{
 }
 */
 .profile-cardmodal{
-  width: 400px;
+  max-width: 400px;
   text-align: center;
   border-radius: 8px;
   overflow: hidden;
@@ -53,6 +53,7 @@ body{
 }
 
 .pics img{
+object-position: center;
   display: block;
   width: 100px;
   height: 100px;

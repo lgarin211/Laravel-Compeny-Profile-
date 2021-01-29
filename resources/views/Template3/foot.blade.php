@@ -76,7 +76,7 @@
 
     {{-- here --}}
     <!-- Modal{{$item->Name_Developer}} -->
-    <div class="modal fade" id="exampleModal{{$item->id}}" tabindex="-1" aria-labelledby="exampleModalLabel{{$item->id}}" aria-hidden="true">
+    <div class="text-center modal fade" id="exampleModal{{$item->id}}" tabindex="-1" aria-labelledby="exampleModalLabel{{$item->id}}" aria-hidden="true">
       <div class="modal-dialog">
         {{-- <div class="modal-content"> --}}
           <div class="profile-cardmodal">

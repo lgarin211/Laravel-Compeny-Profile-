@@ -4,12 +4,12 @@
 
         <div class="section-title">
             <h2>Kontak</h2>
-            <p>Kami Selalu Siap Hadari Membantu anda Pada Jam Kerja Melalui Alamat dan Kontak Berikut.</p>
+            <p>{{ $data['pasing']['text_contak'] }}</p>
         </div>
 
         <div class="row">
 
-            <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="col-lg-5 d-flex palign-items-stretch">
                 <div class="info">
                     <div class="address">
                         <i class="icofont-google-map"></i>

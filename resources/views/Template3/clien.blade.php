@@ -5,7 +5,7 @@
         <div class="justify-content-center row" data-aos="zoom-in">
             @foreach ($data['cliens'] as $item)
 
-            <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center ">
+            <div class="card pr-1 pl-1 col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center ">
                 <img src="{{$item->Poster}}" class="img-fluid" alt="">
             </div>
 
