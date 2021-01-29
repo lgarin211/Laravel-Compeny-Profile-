@@ -70,21 +70,44 @@
             <div class="credits">
             </div>
         </div>
-    </footer><!-- End Footer -->
+    </footer>
 
-    <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
-    {{-- <div id="preloader"></div> --}}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        $('.owl-carousel').owlCarousel({
-            loop:true,
-            center: true,
-            items:1,
-            autoplay:true,
-            autoplayTimeout:5000,
-            autoplayHoverPause:true,
+    <!-- End Footer -->        @foreach ($data['developer'] as $item)
+
+    {{-- here --}}
+    <!-- Modal{{$item->Name_Developer}} -->
+    <div class="modal fade" id="exampleModal{{$item->id}}" tabindex="-1" aria-labelledby="exampleModalLabel{{$item->id}}" aria-hidden="true">
+      <div class="modal-dialog">
+        {{-- <div class="modal-content"> --}}
+          <div class="profile-cardmodal">
+            <div class="card-headeras">
+                <div class="pics">
+                <img src="{{$item->Poster}}" alt="">
+            </div>
+            <div class="namemodal">{{$item->Name_Developer}}</div>
+            <div class="desc">{{$item->Bidang}}</div>
+        </div>
+        <div class="card-footermodal">
+            {{$item->Deskripsi}}
+        </div>
+    </div>
+</div>
+</div>
+{{-- post --}}
+@endforeach
+<a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+{{-- <div id="preloader"></div> --}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        center: true,
+        items:1,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
             // margin:10,
             // autoWidth:true,
             nav:true,
@@ -99,7 +122,7 @@
             }
         })
     </script>
-        <script type="text/javascript">
+    <script type="text/javascript">
         $('.noknok').owlCarousel({
             loop:true,
             center: true,

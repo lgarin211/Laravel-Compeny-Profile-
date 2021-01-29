@@ -15,26 +15,24 @@
       Launch demo modal
   </button>
 
-  <!-- Modal -->
+  <!-- Modal{{$item->Name_Developer}} -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <!-- <div class="modal-content"> -->
-          <div class="profile-card">
-            <div class="card-header">
+          <div class="profile-cardmodal">
+            <div class="card-headeras">
               <div class="pic">
                 <img src="pic.png" alt="">
             </div>
-            <div class="name">John Doe</div>
-            <div class="desc">Developer & Designer</div>
+            <div class="namemodal">{{$item->Name_Developer}}</div>
+            <div class="desc">{{$item->Bidang}}</div>
         </div>
-        <div class="card-footer">
-            s
+        <div class="card-footermodal">
+            {{$item->Deskripsi}}
         </div>
     </div>
-</div>
-
-</div>
 <!-- </div> -->
+</div>
 </div>
 
 

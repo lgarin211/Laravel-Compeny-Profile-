@@ -8,12 +8,15 @@
     <title>Arsha Bootstrap Template - Index</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
-
+    <link rel="stylesheet" href="{{asset('custom/profile_card')}}/style.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+  {{-- <link rel="stylesheet" href="style.css"> --}}
     <!-- Favicons -->
     <link href="{{asset('assetsArsha')}}/img/favicon.png" rel="icon">
     <link href="{{asset('assetsArsha')}}/img/apple-touch-icon.png" rel="apple-touch-icon">
     {{-- costem --}}
-    <link rel="stylesheet" href="{{asset('custom/profile_card')}}/style.css">
+
     <link rel="stylesheet" href="{{asset('custom/About')}}/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
@@ -35,6 +38,7 @@
 
     <!-- Template Main CSS File -->
     <link href="{{asset('assetsArsha')}}/css/style.css" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/0e70351f42.js" crossorigin="anonymous"></script>
 
     <!-- =======================================================

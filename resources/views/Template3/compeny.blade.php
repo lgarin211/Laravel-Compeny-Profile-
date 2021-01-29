@@ -33,11 +33,11 @@
 @include('Template3.team')
 <!-- End Team Section -->
 <!-- ======= Portfolio Section ======= -->
-@include('Template3.portofolio')
+{{-- @include('Template3.portofolio') --}}
 <!-- End Portfolio Section -->
 
 <!-- ======= Pricing Section ======= -->
-@include('Template3.pricing')
+{{-- @include('Template3.pricing') --}}
 <!-- End Pricing Section -->
 
 <!-- ======= Frequently Asked Questions Section ======= -->

@@ -31,27 +31,11 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal{{$item->id}}" tabindex="-1" aria-labelledby="exampleModalLabel{{$item->id}}" aria-hidden="true">
-              <div class="modal-dialog">
-                <!-- <div class="modal-content"> -->
-                  <div class="profile-cardmodal">
-                    <div class="card-headeras">
-                      <div class="pic">
-                        <img src="pic.png" alt="">
-                    </div>
-                    <div class="namemodal">{{$item->Name_Developer}}</div>
-                    <div class="desc">{{$item->Bidang}}</div>
-                </div>
-                <div class="card-footermodal">
-                    {{$item->Deskripsi}}
-                </div>
-            </div>
             @endforeach
 
 
         </div>
 
-    </div>
+
+</div>
 </section><!-- End Team Section -->

@@ -27,7 +27,7 @@ body{
   padding: 60px 40px;
 }
 
-.pic{
+.pics{
   display: inline-block;
   padding: 8px;
   background: linear-gradient(130deg, #74b9ff, #e66767);
@@ -52,7 +52,7 @@ body{
   }
 }
 
-.pic img{
+.pics img{
   display: block;
   width: 100px;
   height: 100px;
