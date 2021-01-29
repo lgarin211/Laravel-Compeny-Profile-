@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 // Route::('/','Controller');
 
 
-
+Route::get('index', [ProfileAdmin::class, 'indfer']);
 // byagus
 Route::get('/pos', [ProfileAdmin::class, 'data']);
 Route::get('/', [ProfileAdmin::class, 'indfer']);
