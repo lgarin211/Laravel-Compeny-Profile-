@@ -36,15 +36,15 @@
             <div class="modal fade" id="exampleModal{{$item->id}}" tabindex="-1" aria-labelledby="exampleModalLabel{{$item->id}}" aria-hidden="true">
               <div class="modal-dialog">
                 <!-- <div class="modal-content"> -->
-                  <div class="profile-card">
-                    <div class="card-header">
+                  <div class="profile-cardmodal">
+                    <div class="card-headeras">
                       <div class="pic">
                         <img src="pic.png" alt="">
                     </div>
-                    <div class="name">{{$item->Name_Developer}}</div>
+                    <div class="namemodal">{{$item->Name_Developer}}</div>
                     <div class="desc">{{$item->Bidang}}</div>
                 </div>
-                <div class="card-footer">
+                <div class="card-footermodal">
                     {{$item->Deskripsi}}
                 </div>
             </div>
