@@ -93,6 +93,8 @@
 
     })(jQuery);
 </script>
+
+
 <script>
     $('#lfm').filemanager('image', {
         prefix: route_prefix

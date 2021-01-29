@@ -19,13 +19,10 @@
 <div id="pas" class="container shodow-sm">
     @foreach ($data['artikels'] as $item)
     <div class="card">
-        @foreach($item as $key=>$itm)
-        @if($key=="ce")
-        {{htmlspecialchars($itm)}}
-        @else
-        {{ $itm }}
-        @endif
-        @endforeach
+        <div class="row">
+            <h4 class="col-md-9">{{ $item->title }}</h4>
+            <button type="button" class="btn btn-primary col-md-3" data-bs-toggle="modal" data-bs-target="#art{{ $item->id}}">detail</button>
+        </div>
     </div>
     @endforeach
 </div>

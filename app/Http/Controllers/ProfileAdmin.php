@@ -18,7 +18,7 @@ class ProfileAdmin extends Controller
    {
 
     $find = asset('');
-    $replace ="";
+    $replace ="/";
     if (!empty($_POST)) {
         foreach ($_POST as $key => $value) {
             $_POST[$key]=str_replace($find,$replace,$value);
