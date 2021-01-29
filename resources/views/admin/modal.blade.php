@@ -12,7 +12,8 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                @foreach ($data['developer'] as $key=>$item)
+                @foreach ($data['developer'] as $key0=>$item)
+                @if ($key0==0)
                 <form method="POST" action="add" class="">
                     <input type="hidden" name="tabel" value="developer">
                     @csrf
@@ -86,8 +87,9 @@
                     </div>
                 </div>
                 <br>
-                <?break;?>
+                @endif
                 @endforeach
+
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -128,7 +130,9 @@ integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroa
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                @foreach ($data['project'] as $key=>$item)
+
+                @foreach ($data['project'] as $key0=>$item)
+                @if ($key0==0)
                 <form method="POST" action="add" class="">
                     <input type="hidden" name="tabel" value="project">
                     @csrf
@@ -222,7 +226,7 @@ integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroa
                 </div>
             </div>
             <br>
-            <?break;?>
+            @endif
             @endforeach
         </div>
         <div class="modal-footer">
@@ -253,7 +257,8 @@ integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroa
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    @foreach ($data['testimonies'] as $key=>$item)
+                    @foreach ($data['testimonies'] as $key0=>$item)
+                    @if ($key0==0)
                     <form method="POST" action="add" class="">
                         @csrf
                         <input type="hidden" name="tabel" value="testimonies">
@@ -334,7 +339,7 @@ integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroa
                         </div>
                     </div>
                     <br>
-                    <?break;?>
+                    @endif
                     @endforeach
                 </div>
                 <div class="modal-footer">
@@ -364,7 +369,8 @@ integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroa
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                @foreach ($data['setting'] as $key=>$item)
+                @foreach ($data['setting'] as $key0=>$item)
+                @if ($key0==0)
                 <form method="POST" action="add" class="">
                     <input type="hidden" name="tabel" value="setting">
                     @csrf
@@ -447,7 +453,7 @@ integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroa
                     </div>
                 </div>
                 <br>
-                <?break;?>
+                @endif
                 @endforeach
             </div>
             <div class="modal-footer">
@@ -478,7 +484,8 @@ integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroa
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                @foreach ($data['servides'] as $key=>$item)
+                @foreach ($data['servides'] as $key0=>$item)
+                @if ($key0==0)
                 <form method="POST" action="add" class="">
                     <input type="hidden" name="tabel" value="servides">
                     @csrf
@@ -561,7 +568,7 @@ integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroa
                     </div>
                 </div>
                 <br>
-                <?break;?>
+                @endif
                 @endforeach
             </div>
             <div class="modal-footer">
@@ -591,7 +598,8 @@ integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroa
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                @foreach ($data['q_a_s'] as $key=>$item)
+                @foreach ($data['q_a_s'] as $key0=>$item)
+                @if ($key0==0)
                 <form method="POST" action="add" class="">
                     <input type="hidden" name="tabel" value="q_a_s">
                     @csrf
@@ -674,7 +682,7 @@ integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroa
                     </div>
                 </div>
                 <br>
-                <?break;?>
+                @endif
                 @endforeach
             </div>
             <div class="modal-footer">
@@ -704,7 +712,8 @@ integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroa
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                @foreach ($data['menu'] as $key=>$item)
+                @foreach ($data['menu'] as $key0=>$item)
+                @if ($key0==0)
                 <form method="POST" action="add" class="">
                     <input type="hidden" name="tabel" value="menu">
                     @csrf
@@ -787,7 +796,7 @@ integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroa
                     </div>
                 </div>
                 <br>
-                <?break;?>
+                @endif
                 @endforeach
             </div>
             <div class="modal-footer">
@@ -817,7 +826,8 @@ integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroa
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                @foreach ($data['cliens'] as $key=>$item)
+                @foreach ($data['cliens'] as $key0=>$item)
+                @if ($key0==0)
                 <form method="POST" action="add" class="">
                     <input type="hidden" name="tabel" value="cliens">
                     @csrf
@@ -900,7 +910,7 @@ integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroa
                     </div>
                 </div>
                 <br>
-                <?break;?>
+                @endif
                 @endforeach
             </div>
             <div class="modal-footer">
@@ -930,7 +940,8 @@ integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroa
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                @foreach ($data['cat_project'] as $key=>$item)
+                @foreach ($data['cat_project'] as $key0=>$item)
+                @if ($key0==0)
                 <form method="POST" action="add" class="">
                     <input type="hidden" name="tabel" value="cat_project">
                     @csrf
@@ -1013,7 +1024,7 @@ integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroa
                     </div>
                 </div>
                 <br>
-                <?break;?>
+                @endif
                 @endforeach
             </div>
             <div class="modal-footer">
@@ -1044,7 +1055,8 @@ integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroa
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                @foreach ($data['artikels'] as $key=>$item) 
+                @foreach ($data['artikels'] as $key0=>$item) 
+                @if ($key0==0)
                 <form method="POST" action="add" class="">
                     <input type="hidden" name="tabel" value="artikels">
                     @csrf
@@ -1091,7 +1103,7 @@ integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroa
                         </div>
                     </div>
                     <br>
-                    <?break;?>
+                    @endif
                     @endforeach
                 </div>
                 <div class="modal-footer">
