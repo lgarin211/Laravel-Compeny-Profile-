@@ -6,26 +6,44 @@
     {{ session('cas') }}
 </div>
 @endif
-<form method="POST" action="add">
-    <input type="hidden" name="tabel" value="artikels">
-    @csrf
-    @foreach ($data['artikels'] as $key=>$item)
-    @if ($key==1)
-    @else
-    @foreach ($item as $key2=>$value)
-    @if ($key2=='ce')
-    @include('admin.ck')
-    @else
-    <div class="input-group mb-3">
-        <span class="input-group-text" id="basic-addon1">{{ $key2 }}</span>
-        <input type="text" class="form-control" name="{{ $key2 }}" placeholder="{{ $value }}" aria-describedby="basic-addon1">
+<div class="row">
+    <div class="col-md-4 mb-2">
+        @include('admin.modal')
+        @yield('modalartikel')
     </div>
-    @endif
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        @yield('modaldevelopersrc')
+    </div>
+</div>
+<div id="pas" class="container shodow-sm">
+    @foreach ($data['artikels'] as $item)
+    <div class="card">
+        @foreach($item as $key=>$itm)
+        @if($key=="ce")
+        {{htmlspecialchars($itm)}}
+        @else
+        {{ $itm }}
+        @endif
+        @endforeach
+    </div>
     @endforeach
-    @endif
-    @endforeach
+</div>
+<input type="hidden" id="nosi" value="{{asset('')}}admin/like?tabel=developer&key=">
+<script>
+    // const as=document.querySelector('.fint_JUDUL_BUKU');
+    var base_url = document.getElementById('nosi').value;
 
-    <button type="submit" class="btn btn-primary">kirim artikel</button>
-</form>
+    //event add
+    function domdom() {
+        var keywpr = document.getElementById('key');
+        var contain = document.getElementById('pas');
+        var link_query = base_url + keywpr.value
+        fetch(link_query)
+        .then((response) => response.text())
+        .then((response) => (contain.innerHTML = response));
+        // val ajax Kurian WPU Eps13
 
+    }
+</script>
 @endsection

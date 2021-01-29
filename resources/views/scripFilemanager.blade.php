@@ -19,7 +19,7 @@
     });
 </script>
 
-<!-- TinyMCE init -->
+{{-- <!-- TinyMCE init -->
 <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
 <script>
     var editor_config = {
@@ -53,7 +53,7 @@
     };
 
     tinymce.init(editor_config);
-</script>
+</script> --}}
 
 <script>
     (function($) {
@@ -100,7 +100,7 @@
     // $('#lfm').filemanager('file', {prefix: route_prefix});
 </script>
 
-<script>
+{{-- <script>
     var lfm = function(id, type, options) {
         let button = document.getElementById(id);
 
@@ -139,9 +139,9 @@
     lfm('lfm2', 'file', {
         prefix: route_prefix
     });
-</script>
+</script> --}}
 
-<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.css" rel="stylesheet">
+{{-- <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.css" rel="stylesheet">
 <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.js"></script>
 <style>
     .popover {
@@ -194,4 +194,4 @@
         })
     });
 </script>
-@endsection
+ --}}@endsection
