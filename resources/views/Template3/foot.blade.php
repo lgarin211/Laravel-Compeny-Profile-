@@ -67,27 +67,74 @@
     <div class="container footer-bottom clearfix">
         <div class="copyright">
             &copy; Copyright <strong><span>{{$data['pasing']['URL']}}</span></strong>. </div>
-        <div class="credits">
+            <div class="credits">
+            </div>
         </div>
-    </div>
-</footer><!-- End Footer -->
+    </footer><!-- End Footer -->
 
-<a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
-<div id="preloader"></div>
+    <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+    {{-- <div id="preloader"></div> --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            center: true,
+            items:1,
+            autoplay:true,
+            autoplayTimeout:5000,
+            autoplayHoverPause:true,
+            // margin:10,
+            // autoWidth:true,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                // 100:{
+                //     items:2
+                // },
 
-<!-- Vendor JS Files -->
-<script src="{{asset('assetsArsha')}}/vendor/jquery/jquery.min.js"></script>
-<script src="{{asset('assetsArsha')}}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="{{asset('assetsArsha')}}/vendor/jquery.easing/jquery.easing.min.js"></script>
-<script src="{{asset('assetsArsha')}}/vendor/php-email-form/validate.js"></script>
-<script src="{{asset('assetsArsha')}}/vendor/waypoints/jquery.waypoints.min.js"></script>
-<script src="{{asset('assetsArsha')}}/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="{{asset('assetsArsha')}}/vendor/venobox/venobox.min.js"></script>
-<script src="{{asset('assetsArsha')}}/vendor/owl.carousel/owl.carousel.min.js"></script>
-<script src="{{asset('assetsArsha')}}/vendor/aos/aos.js"></script>
+            }
+        })
+    </script>
+        <script type="text/javascript">
+        $('.noknok').owlCarousel({
+            loop:true,
+            center: true,
+            items:4,
+            autoplay:true,
+            autoplayTimeout:5000,
+            autoplayHoverPause:true,
+            // margin:10,
+            // autoWidth:true,
+            // nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                // 100:{
+                //     items:2
+                // },
 
-<!-- Template Main JS File -->
-<script src="{{asset('assetsArsha')}}/js/main.js"></script>
+            }
+        })
+    </script>
+
+    <!-- Vendor JS Files -->
+    <script src="{{asset('assetsArsha')}}/vendor/jquery/jquery.min.js"></script>
+    <script src="{{asset('assetsArsha')}}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{asset('assetsArsha')}}/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="{{asset('assetsArsha')}}/vendor/php-email-form/validate.js"></script>
+    <script src="{{asset('assetsArsha')}}/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="{{asset('assetsArsha')}}/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="{{asset('assetsArsha')}}/vendor/venobox/venobox.min.js"></script>
+    <script src="{{asset('assetsArsha')}}/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="{{asset('assetsArsha')}}/vendor/aos/aos.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{{asset('assetsArsha')}}/js/main.js"></script>
 
 </body>
 

@@ -7,7 +7,7 @@
 <!-- End Cliens Section -->
 
 <!-- ======= About Us Section ======= -->
-@include('Template3.about')
+{{-- @include('Template3.about') --}}
 <!-- End About Us Section -->
 
 <!-- ======= Why Us Section ======= -->
@@ -17,7 +17,9 @@
 <!-- ======= Skills Section ======= -->
 {{-- @include('Template3.skill') --}}
 <!-- End Skills Section -->
-
+<!-- ======= Services Section ======= -->
+@include('Custem.About.index')
+<!-- End Services Section -->
 <!-- ======= Services Section ======= -->
 @include('Template3.service')
 <!-- End Services Section -->
@@ -35,7 +37,7 @@
 <!-- End Portfolio Section -->
 
 <!-- ======= Pricing Section ======= -->
-{{-- @include('Template3.pricing') --}}
+@include('Template3.pricing')
 <!-- End Pricing Section -->
 
 <!-- ======= Frequently Asked Questions Section ======= -->

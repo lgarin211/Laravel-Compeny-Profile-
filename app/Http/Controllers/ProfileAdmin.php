@@ -14,6 +14,18 @@ use Illuminate\Support\Facades\DB;
 class ProfileAdmin extends Controller
 {
     //
+ public function __construct()
+ {
+
+$find = asset('');
+$replace ="";
+    if (!empty($_POST)) {
+        foreach ($_POST as $key => $value) {
+            $mas[$key]=str_replace($find,$replace,$value);
+            }
+        }
+        dd($mas);
+    }
     public function linkn()
     {
         $mas = DB::table($_GET['tabel'])->first();
@@ -36,8 +48,8 @@ class ProfileAdmin extends Controller
         if (!empty($_GET['tabel'])) {
             $data = $this->data();
             $data[$_GET['tabel']] = DB::table($_GET['tabel'])
-                ->where('id', '=', $_GET['id'])
-                ->get();
+            ->where('id', '=', $_GET['id'])
+            ->get();
             if ($_GET['tabel'] == 'project') {
                 foreach ($data['project'] as $key => $value) {
                     $data['project'][$key]->filter = explode(',', $value->filter);
@@ -52,8 +64,8 @@ class ProfileAdmin extends Controller
             unset($_POST['_token'], $_POST['tabel']);
             // dd($tabel);
             DB::table($tabel)
-                ->where('id', $_POST['id'])
-                ->update($_POST);
+            ->where('id', $_POST['id'])
+            ->update($_POST);
             return redirect('/admin/' . $tabel)->with('cas', 'Data Berhasil Di Update!');
         }
     }
@@ -158,9 +170,9 @@ class ProfileAdmin extends Controller
         $tabel = ['menu', 'developer', 'project', 'setting', 'users', 'cat_project', 'views', 'testimonies', 'cliens', 'q_a_s', 'servides'];
         foreach ($tabel as $key => $value) {
             $das = DB::table($value)
-                ->orderBy('id', 'desc')
-                ->get()
-                ->toArray();
+            ->orderBy('id', 'desc')
+            ->get()
+            ->toArray();
             $data[$value] = $das;
             $data['ORM'] = $this->dataE();
         }
@@ -189,8 +201,8 @@ class ProfileAdmin extends Controller
     {
         $data = $this->data();
         $vas = DB::table('views')
-            ->where('active', '=', 1)
-            ->first();
+        ->where('active', '=', 1)
+        ->first();
         $tempalte = $vas->view . '/compeny';
         // \dd($tempalte);
         return view($tempalte, \compact('data'));

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Responsive Testimonial Carousel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css" integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA==" crossorigin="anonymous" />
+
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'><link rel="stylesheet" href="./style.css">
+  <style type="text/css">
+    /* Tombol Button Pesan */
+    #button {margin: 5% auto; width: 100px; text-align: center;}
+    #button a {
+        width: 100px;
+        height: 30px;
+        vertical-align: middle;
+        background-color: #F00;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid transparent;
+    }
+
+    /* Jendela Pop Up */
+    #popup {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background: rgba(0,0,0,.7);
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        visibility: hidden;
+    }
+
+    .window {
+        width: 400px;
+        height: 100px;
+        background: #fff;
+        border-radius: 10px;
+        position: relative;
+        padding: 10px;
+        text-align: center;
+        margin: 15% auto;
+    }
+    .window h2 {
+        margin: 30px 0 0 0;
+    }
+    /* Button Close */
+    .close-button {
+        width: 6%;
+        height: 20%;
+        line-height: 23px;
+        background: #000;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        display: block;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        position: absolute;
+        top: -10px;
+        right: -10px;   
+    }
+
+    /* Memunculkan Jendela Pop Up*/
+    #popup:target {
+        visibility: visible;
+    }
+</style>
+</head>
+<body>
+    <div>
+        <div id="button"><a href="#popup">Pesan</a></div>
+
+        <div id="popup">
+            <div class="window">
+              <section>
+                <div class="customer-feedback">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-sm-offset-2 col-sm-8">
+                                <div>
+                                    <h2 class="section-title">What Clients Say</h2>
+                                </div>
+                            </div><!-- /End col -->
+                        </div><!-- /End row -->
+
+                        <div class="row">
+                            <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
+                                <div class="owl-carousel feedback-slider">
+
+                                    <!-- slider item -->
+                                    <div class="feedback-slider-item">
+                                        <img src="//c2.staticflickr.com/8/7310/buddyicons/24846422@N06_r.jpg" class="center-block img-circle" alt="Customer Feedback">
+                                        <h3 class="customer-name">Lisa Redfern</h3>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is a long established fact that a reader will be distracted by the readable its layout.</p>
+                                        <span class="light-bg customer-rating" data-rating="5">
+                                            5
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                    </div>
+                                    <!-- /slider item -->
+
+                                    <!-- slider item -->
+                                    <div class="feedback-slider-item">
+                                        <img src="https://res.cloudinary.com/hnmqik4yn/image/upload/c_fill,fl_force_strip,h_128,q_100,w_128/v1493982718/ah57hnfnwxkmsciwivve.jpg" class="center-block img-circle" alt="Customer Feedback">
+                                        <h3 class="customer-name">Cassi</h3>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is a long established fact that a reader will be distracted by the readable its layout.</p>
+                                        <span class="light-bg customer-rating" data-rating="4">
+                                            4
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                    </div>
+                                    <!-- /slider item -->
+
+                                    <!-- slider item -->
+                                    <div class="feedback-slider-item">
+                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/451270/profile/profile-80.jpg" class="center-block img-circle" alt="Customer Feedback">
+                                        <h3 class="customer-name">Md Nahidul</h3>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is a long established fact that a reader will be distracted by the readable its layout.</p>
+                                        <span class="light-bg customer-rating" data-rating="5">
+                                            5
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                    </div>
+                                    <!-- /slider item -->
+
+                                </div><!-- /End feedback-slider -->
+
+                                <!-- side thumbnail -->
+                                <div class="feedback-slider-thumb hidden-xs">
+                                    <div class="thumb-prev">
+                                        <span>
+                                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/451270/profile/profile-80.jpg" alt="Customer Feedback">
+                                        </span>
+                                        <span class="light-bg customer-rating">
+                                            5
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                    </div>
+
+                                    <div class="thumb-next">
+                                        <span>
+                                            <img src="https://res.cloudinary.com/hnmqik4yn/image/upload/c_fill,fl_force_strip,h_128,q_100,w_128/v1493982718/ah57hnfnwxkmsciwivve.jpg" alt="Customer Feedback">
+                                        </span>
+                                        <span class="light-bg customer-rating">
+                                            4
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- /side thumbnail -->
+
+                            </div><!-- /End col -->
+                        </div><!-- /End row -->
+                    </div><!-- /End container -->
+                </div><!-- /End customer-feedback -->
+            </section>
+        </div>
+    </div>
+</div>
+<!-- partial:index.partial.html -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        center: true,
+        items:1,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
+            // margin:10,
+            // autoWidth:true,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                // 100:{
+                //     items:2
+                // },
+
+            }
+        })
+    </script>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+    <script src="./script.js"></script>
+
+</body>
+</html>

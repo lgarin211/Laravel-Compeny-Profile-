@@ -25,19 +25,23 @@
                                                 @csrf
                                                 <input type="hidden" name="tabel" value="developer">
                                                 <input type="hidden" name="id" value="{{$item->id}}">
-                                                <input id="thumbnail" class="img{{$item->id}} form-control" type="text" placeholder="{{$key}}" name="{{$key}}" aria-label="{{$key}}" aria-describedby="button-addon2" value="{{$itm}}">
+                                                <input id="thumbnail" class="img{{$item->id}} form-control" type="text"
+                                                    placeholder="{{$key}}" name="{{$key}}" aria-label="{{$key}}"
+                                                    aria-describedby="button-addon2" value="{{$itm}}">
                                                 <span class="input-group-btn">
-                                                    <a id="lfm" data-input="thumbnail" data-preview="holder" class="btn btn-primary">
+                                                    <a id="lfm" data-input="thumbnail" data-preview="holder"
+                                                        class="btn btn-primary">
                                                         <i class="fa fa-picture-o"></i> Choose
                                                     </a>
                                                 </span>
-                                                <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Button</button>
+                                                <button class="btn btn-outline-secondary" type="submit"
+                                                    id="button-addon2">Button</button>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                @else
-                                <div class="col-md-5">
+                                </div> @elseif ($key=='id')
+                                @elseif ($key=='Deskripsi')
+                                <div class="col-md-12">
                                     <label for="{{'idis'.$key}}" class="form-label">{{$key}}</label>
                                     <div class="row">
                                         <div class="col-md-12">
@@ -45,8 +49,29 @@
                                                 @csrf
                                                 <input type="hidden" name="tabel" value="developer">
                                                 <input type="hidden" name="id" value="{{$item->id}}">
-                                                <input type="text" class="form-control" placeholder="{{$key}}" name="{{$key}}" aria-label="{{$key}}" aria-describedby="button-addon2" value="{{$itm}}">
-                                                <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Button</button>
+                                                <textarea type="text" class="form-control" placeholder="{{$key}}"
+                                                    name="{{$key}}" aria-label="{{$key}}"
+                                                    aria-describedby="button-addon2" rows="10">{{$itm}}</textarea>
+                                                <button class="text-center btn btn-primary col-md-12" type="submit"
+                                                    id="button-addon2">Button</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                @else
+                                <div class="col-md-11">
+                                    <label for="{{'idis'.$key}}" class="form-label">{{$key}}</label>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="input-group mb-3">
+                                                @csrf
+                                                <input type="hidden" name="tabel" value="developer">
+                                                <input type="hidden" name="id" value="{{$item->id}}">
+                                                <input type="text" class="form-control" placeholder="{{$key}}"
+                                                    name="{{$key}}" aria-label="{{$key}}"
+                                                    aria-describedby="button-addon2" value="{{$itm}}">
+                                                <button class="btn btn-outline-secondary" type="submit"
+                                                    id="button-addon2">Button</button>
                                             </div>
                                         </div>
                                     </div>

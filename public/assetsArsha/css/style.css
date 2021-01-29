@@ -1859,3 +1859,9 @@ section {
     padding-top: 4px;
   }
 }
+
+.btn-ungu {
+    color: #fff;
+    background-color: #9d65c9;
+    border-color: #9d65c9;
+}

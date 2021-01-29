@@ -4,9 +4,9 @@
 
         <div class="section-title">
             <h2>Portfolio</h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
+            {{-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
                 sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> --}}
         </div>
         <ul id="portfolio-flters" class="container  row d-flex justify-content-center text-center" data-aos="fade-up"
             data-aos-delay="100">

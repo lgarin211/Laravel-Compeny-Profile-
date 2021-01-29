@@ -6,20 +6,20 @@
             <h2>Tentang Kami</h2>
         </div>
 
-        <div class="row text-center">
-            <div class="col-lg-12" id="man" >
+        <div class="text-center owl-carousel">
+            <div class="col-sm-12 item" id="man" >
                 <p>
                     {{$data['pasing']['text_about']}}
                 </p>
                 {{-- <a href="#" class="btn-learn-more">Learn More</a> --}}
             </div>
-            <div class="col-lg-12 pt-4 pt-lg-0" id="men">
+            <div class="col-sm-12 item" id="men">
                 <p>
                     {{$data['pasing']['long_Slogan']}}
                 </p>
                 <ul class="text-center row" style="list-style-type: none;">
                     @foreach ($data['pasing']['Kelebihan'] as $item)
-                    <li class="col-md-4">
+                    <li class="col-md-5">
                         <p class="row">
                             <i class="fab fa-affiliatetheme"></i>
                             <samp class=""> {{$item}}</samp>

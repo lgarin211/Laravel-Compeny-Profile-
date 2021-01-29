@@ -4,9 +4,9 @@
 
         <div class="section-title">
             <h2>Team</h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
+            {{-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
                 sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> --}}
         </div>
 
         <div class="row">
@@ -17,7 +17,7 @@
                     <div class="member-info">
                         <h4>{{$item->Name_Developer}}</h4>
                         <span>{{$item->Bidang}}</span>
-                        <p>{{$item->Deskripsi}}</p>
+                        <p><a href="/dev?id={{$item->id}}" class="btn btn-ungu">Lebih Lanjut</a></p>
                         <div class="social">
                             <a href=""><i class="ri-twitter-fill"></i></a>
                             <a href=""><i class="ri-facebook-fill"></i></a>

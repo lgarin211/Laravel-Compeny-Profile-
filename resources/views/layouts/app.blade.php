@@ -48,7 +48,7 @@
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 </li>
                             @endif
-                            
+
                             @if (Route::has('register'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
@@ -80,6 +80,9 @@
 
         <main class="py-4">
             @yield('content')
+            <div class="container">
+                <a class="btn btn-primary" href="/admin/setting">Dashboard here</a>
+            </div>
         </main>
     </div>
 </body>
