@@ -45,7 +45,7 @@
                     <div class="desc">{{$item->Bidang}}</div>
                 </div>
                 <div class="card-footer">
-                    {{$item->deskripsi}}
+                    {{$item->Deskripsi}}
                 </div>
             </div>
             @endforeach
