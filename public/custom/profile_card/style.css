@@ -1,4 +1,4 @@
-*{
+/**{
   margin: 0;
   padding: 0;
   font-family: "Ubuntu", sans-serif;
@@ -14,7 +14,7 @@ body{
   align-items: center;
   justify-content: center;
 }
-
+*/
 .profile-card{
   width: 400px;
   text-align: center;
