@@ -13,7 +13,7 @@
             @foreach ($data['developer'] as $item)
             <div class="col-lg-6 mt-4 mt-lg-0">
                 <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="pic"><img src="{{$item->Poster}}" class="img-fluid" alt=""></div>
+                    <div class="pic"><img src="{{asset('').$item->Poster}}" class="img-fluid" alt=""></div>
                     <div class="member-info">
                         <h4>{{$item->Name_Developer}}</h4>
                         <span>{{$item->Bidang}}</span>

@@ -21,7 +21,7 @@
             <div class="col-lg-4 col-md-6 portfolio-item @foreach ($item->filter as $it)
                 {{$it.' '}}
             @endforeach">
-                <div class="portfolio-img"><img src="{{$item->Img}}" class="img-fluid" alt="">
+                <div class="portfolio-img"><img src="{{asset('').$item->Img}}" class="img-fluid" alt="">
                 </div>
                 <div class="portfolio-info">
                     <h4>{{$item->Name_Project}}</h4>
@@ -29,7 +29,7 @@
                     <p>@foreach ($item->filter as $it)
                         {{$it.' '}}
                         @endforeach</p>
-                    <a href="{{$item->Img}}" data-gall="portfolioGallery" class="venobox preview-link"
+                    <a href="{{asset('').$item->Img}}" data-gall="portfolioGallery" class="venobox preview-link"
                         title="{{$item->Name_Project}}"><i class="bx bx-plus"></i></a>
                     <a href="portfolio-details.html" class="details-link" title="More Details"><i
                             class="bx bx-link"></i></a>

@@ -82,7 +82,7 @@
           <div class="profile-cardmodal">
             <div class="card-headeras">
                 <div class="pics">
-                <img src="{{$item->Poster}}" alt="">
+                <img src="{{asset('').$item->Poster}}" alt="">
             </div>
             <div class="namemodal">{{$item->Name_Developer}}</div>
             <div class="desc">{{$item->Bidang}}</div>
