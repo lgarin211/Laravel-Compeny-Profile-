@@ -6,7 +6,7 @@
             <h2>Team</h2>
             {{-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
                 sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> --}}
+            ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> --}}
         </div>
 
         <div class="row">
@@ -17,7 +17,11 @@
                     <div class="member-info">
                         <h4>{{$item->Name_Developer}}</h4>
                         <span>{{$item->Bidang}}</span>
-                        <p><a href="/dev?id={{$item->id}}" class="btn btn-ungu">Lebih Lanjut</a></p>
+                        <p>
+                            <button data-bs-toggle="modal" data-bs-target="#exampleModal{{$item->id}}" class="btn btn-ungu">
+                                Lebih Lanjut
+                            </button>
+                        </p>
                         <div class="social">
                             <a href=""><i class="ri-twitter-fill"></i></a>
                             <a href=""><i class="ri-facebook-fill"></i></a>
@@ -25,6 +29,23 @@
                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal{{$item->id}}" tabindex="-1" aria-labelledby="exampleModalLabel{{$item->id}}" aria-hidden="true">
+              <div class="modal-dialog">
+                <!-- <div class="modal-content"> -->
+                  <div class="profile-card">
+                    <div class="card-header">
+                      <div class="pic">
+                        <img src="pic.png" alt="">
+                    </div>
+                    <div class="name">{{$item->Name_Developer}}</div>
+                    <div class="desc">{{$item->Bidang}}</div>
+                </div>
+                <div class="card-footer">
+                    {{$item->deskripsi}}
                 </div>
             </div>
             @endforeach
