@@ -4,9 +4,9 @@
 <!-- Modal{{$item->Name_Project}} -->
 <div class="text-center modal fade" id="project{{$item->id}}" tabindex="-1"
     aria-labelledby="exampleModalLabel{{$item->id}}" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-fullscreen">
         <!-- ======= Portfolio Details Section ======= -->
-        <section id="portfolio-details" class="portfolio-details">
+        <section id="portfolio-details" class="portfolio-details card">
             <div class="container">
                 <div class="portfolio-details-container">
                     <div class="owl-carousel portfolio-details-carousel">
