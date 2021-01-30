@@ -168,7 +168,8 @@ public function del()
     DB::table($_GET['tabel'])->where('id', '=', $_GET['id'])->delete();
     return redirect('/admin/' . $_GET['tabel'])->with('cas', 'Data Berhasil Di Hapus!');
 }
-public function data()
+
+public static function data()
 {
     $data = [];
     $tabel = ['artikels','menu', 'developer', 'project', 'setting', 'users', 'cat_project', 'views', 'testimonies', 'cliens', 'q_a_s', 'servides'];
@@ -178,7 +179,7 @@ public function data()
         ->get()
         ->toArray();
         $data[$value] = $das;
-        $data['ORM'] = $this->dataE();
+        // $data['ORM'] = $this->dataE();
     }
     foreach ($data['project'] as $key => $value) {
         $data['project'][$key]->filter = explode(',', $value->filter);

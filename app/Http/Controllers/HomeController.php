@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Http\Controllers\ProfileAdmin;
 class HomeController extends Controller
 {
     /**
@@ -13,6 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
+        // dd($data);
         $this->middleware('auth');
     }
 
@@ -23,6 +24,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $data=ProfileAdmin::data();
+        dd($data);
+        return view('home',compact('data'));
     }
 }

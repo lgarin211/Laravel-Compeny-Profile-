@@ -14,45 +14,54 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item">
-        <a class="nav-link" href="dashboard">
+{{--         <a class="nav-link" href="dashboard">
             <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Dashboard</span></a>
-        <a class="nav-link" href="menu">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>MENU</span></a>
-        <a class="nav-link" href="developer">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Team</span></a>
-        <a class="nav-link" href="cat_project">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Filter Project</span></a>
-        <a class="nav-link" href="project">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Project</span></a>
-        <a class="nav-link" href="testimonies">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Testimoni</span></a>
-        <a class="nav-link" href="servides">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Layanan Kami</span></a>
-        <a class="nav-link" href="cliens">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Cliens</span></a>
-        <a class="nav-link" href="q_a_s">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Q&S</span></a>
-        <a class="nav-link" href="setting">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Setting</span></a>
-    </li>
+            <span>Dashboard</span></a> --}}
+            <a class="nav-link" href="menu">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>MENU</span>
+            </a>
+            <a class="nav-link" href="developer">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Team</span>
+            </a>
+            <a class="nav-link" href="cat_project">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Filter Project</span>
+            </a>
+            <a class="nav-link" href="project">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Project</span>
+            </a>
+            <a class="nav-link" href="testimonies">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Testimoni</span>
+            </a>
+            <a class="nav-link" href="servides">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Layanan Kami</span>
+            </a>
+            <a class="nav-link" href="cliens">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Cliens</span>
+            </a>
+            <a class="nav-link" href="artikels">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Artikels</span>
+            </a>
+            <a class="nav-link" href="setting">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Setting</span>
+            </a>
+        </li>
 
-    <!-- Divider -->
-    <hr class="sidebar-divider">
+        <!-- Divider -->
+        <hr class="sidebar-divider">
 
-    <!-- Heading -->
-    <div class="sidebar-heading">
-        Interface
-    </div>
+        <!-- Heading -->
+        <div class="sidebar-heading">
+            Interface
+        </div>
 
-</ul>
-<!-- End of Sidebar -->
+    </ul>
+    <!-- End of Sidebar -->
