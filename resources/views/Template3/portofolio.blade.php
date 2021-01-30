@@ -31,7 +31,7 @@
                         @endforeach</p>
                     <a href="{{asset('').$item->Img}}" data-gall="portfolioGallery" class="venobox preview-link"
                         title="{{$item->Name_Project}}"><i class="bx bx-plus"></i></a>
-                    <a href="portfolio-details.html" class="details-link" title="More Details"><i
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#project{{$item->id}}" class="details-link" title="More Details"><i
                             class="bx bx-link"></i></a>
                 </div>
             </div>@endforeach

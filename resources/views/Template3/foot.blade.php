@@ -94,9 +94,9 @@
         </div>
     </div>
 </div>
-@include('Template3.modal')
 {{-- post --}}
 @endforeach
+@include('Template3.modal')
 <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
 <div id="preloader"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"

@@ -2,7 +2,7 @@
 {{-- here --}}
 @foreach ($data['project'] as $item)
 <!-- Modal{{$item->Name_Project}} -->
-<div class="text-center modal fade" id="{{$item->id}}" tabindex="-1"
+<div class="text-center modal fade" id="project{{$item->id}}" tabindex="-1"
     aria-labelledby="exampleModalLabel{{$item->id}}" aria-hidden="true">
     <div class="modal-dialog">
         <!-- ======= Portfolio Details Section ======= -->
