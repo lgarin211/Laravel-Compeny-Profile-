@@ -18,6 +18,12 @@ use Illuminate\Support\Facades\Route;
 // byagus
 Route::get('/pos', [ProfileAdmin::class, 'data']);
 Route::get('/', [ProfileAdmin::class, 'indfer']);
+Route::get('/artikel', [ProfileAdmin::class, 'allart']);
+Route::get('/artikel/pag', [ProfileAdmin::class, 'onart']);
+
+
+
+
 Route::group(['middleware' => ['auth']], function () {
 Route::get('/admin/setting', [ProfileAdmin::class, 'adminSetting']);
 Route::get('/admin/developer', [ProfileAdmin::class, 'adminDev']);

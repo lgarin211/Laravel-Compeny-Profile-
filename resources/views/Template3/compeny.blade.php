@@ -1,6 +1,7 @@
 {{-- @dd($data)<!-- ======= Header ======= --> --}}
 @include('Template3.head')
 <!-- End Header -->
+@include('Template3.hero')
 
 <!-- ======= Cliens Section ======= -->
 @include('Template3.clien')
