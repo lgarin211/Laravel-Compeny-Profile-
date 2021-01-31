@@ -16,11 +16,13 @@ class CreateArtikelsTable extends Migration
         Schema::create('artikels', function (Blueprint $table) {
             $table->id();
             $table->string('title');
+            $table->string('poster');
+            $table->string('headline');
+            $table->string('cat');
             $table->text('ce');
             // $table->string('');
             // $table->string('');
-            // $table->string('');
-            // $table->timestamps();
+            $table->timestamps();
         });
     }
 

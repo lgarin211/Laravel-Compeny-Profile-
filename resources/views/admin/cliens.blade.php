@@ -30,7 +30,7 @@
                 <a href="del?tabel=cliens&id={{$item->id}}" class="btn btn-danger"><i class="fas fa-trash" aria-hidden="true"> Hapus</i></a>
             </div>
             <div class="col-md-5">
-                <img src="{{$item->Poster}}"
+                <img src="{{asset('/')$item->Poster}}"
                     class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="250px"
                     height="250px" role="img">
 

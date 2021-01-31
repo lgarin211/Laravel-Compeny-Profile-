@@ -18,14 +18,20 @@ class ProfileAdmin extends Controller
     {
 
         $find = asset('');
-        $replace = "/";
         if (!empty($_POST)) {
             foreach ($_POST as $key => $value) {
+                // \dump($key);
+                if ($key == 'ce') {
+                    $replace = "/";
+                } else {
+                    $replace = "";
+                }
+                // dump($replace);
                 $_POST[$key] = str_replace($find, $replace, $value);
             }
-        }
-        // dd($mas);
-    }
+            // dd($_POST);
+}
+            }
     public function linkn()
     {
         $mas = DB::table($_GET['tabel'])->first();
@@ -173,7 +179,7 @@ class ProfileAdmin extends Controller
     public static function data()
     {
         $data = [];
-        $tabel = ['artikels', 'menu', 'developer', 'project', 'setting', 'users', 'cat_project', 'views', 'testimonies', 'cliens', 'q_a_s', 'servides'];
+        $tabel = ['developer', 'menu', 'artikels', 'project', 'setting', 'users', 'cat_project', 'views', 'testimonies', 'cliens', 'q_a_s', 'servides'];
         foreach ($tabel as $key => $value) {
             $das = DB::table($value)
                 ->orderBy('id', 'desc')
@@ -193,7 +199,7 @@ class ProfileAdmin extends Controller
             $pasing['Kelebihan'] = explode(',', $pasing['Kelebihan']);
             $data['pasing'] = $pasing;
         }
-        if (!empty($_GET)) {
+        if (!empty($_GET['json'])) {
             if ($_GET['json'] == 'all') {
                 return \json_encode($data);
                 die;
@@ -203,24 +209,43 @@ class ProfileAdmin extends Controller
     }
     public function allart()
     {
-        $data=$this->data();
+        $data = $this->data();
         $data['menu'] = DB::table('menu')
-                ->orderBy('id', 'desc')
-                ->where('usef', '=', 'artikel')
-                ->get()
-                ->toArray();
-
+            ->orderBy('id', 'desc')
+            ->where('usef', '=', 'artikel')
+            ->get()
+            ->toArray();
+        $artikels = DB::table('artikels')
+            ->orderBy('id', 'desc');
+        if (!empty($_GET['o'])) {
+            switch ($_GET['o']) {
+                case '1':
+                    $artikels = $artikels->take(5);
+                    break;
+                default:
+                    $artikels = $artikels
+                        ->offset(($_GET['o'] - 1) * 5)
+                        ->take(5);
+                    break;
+            }
+        } else {
+            $artikels = $artikels->take(5);
+        }
+        $artikels = $artikels->get();
+        // $artikels->toArray();
+        // dd($artikels);
         return view('artikel.artikelhome', \compact('data'));
     }
     public function onart()
     {
-        $data=$this->data();
+        $data = $this->data();
         $data['menu'] = DB::table('menu')
-                ->orderBy('id', 'desc')
-                ->where('usef', '=', 'artikel')
-                ->get()
-                ->toArray();
-
+            ->orderBy('id', 'desc')
+            ->where('usef', '=', 'artikel')
+            ->get()
+            ->toArray();
+        $data['item'] = DB::table('artikels')
+            ->where('id', '=', $_GET['w'])->first();
         return view('artikel.onepost', \compact('data'));
     }
 
@@ -238,10 +263,10 @@ class ProfileAdmin extends Controller
             ->first();
         $tempalte = $vas->view . '/compeny';
         $data['menu'] = DB::table('menu')
-                ->orderBy('id', 'desc')
-                ->where('usef', '=', 'base')
-                ->get()
-                ->toArray();
+            ->orderBy('id', 'desc')
+            ->where('usef', '=', 'base')
+            ->get()
+            ->toArray();
         // \dd($data);
 
         return view($tempalte, \compact('data'));

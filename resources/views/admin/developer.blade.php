@@ -21,7 +21,7 @@
     <div class="card mb-3">
         <div class="row g-0">
             <div class="col-md-4">
-                <img src="{{$item->Poster}}" class="gimg{{$item->id}}" alt="{{$item->Poster}}" width="100%" height="300px">
+                <img src="{{asset('/').$item->Poster}}" class="gimg{{$item->id}}" alt="{{$item->Poster}}" width="100%" height="300px">
             </div>
             <div class="col-md-8">
                 <div class="card-body">
