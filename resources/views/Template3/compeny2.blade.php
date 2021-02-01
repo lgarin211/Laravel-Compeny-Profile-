@@ -11,7 +11,7 @@
     @include('Template3.linkasset')
     @yield('alcall')
     {{-- loading here--}}
-    <div id="preloader"></div>
+    {{-- <div id="preloader"></div> --}}
 </head>
 
 <body>
@@ -146,7 +146,7 @@
     </section><!-- End Services Section -->
 
     {{-- @include('Template3.cta') --}}
-    {{-- @include('Template3.team') --}}
+    @include('Template3.team')
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
         <div class="container" data-aos="fade-up">
