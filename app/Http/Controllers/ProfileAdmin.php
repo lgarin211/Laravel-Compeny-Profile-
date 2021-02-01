@@ -261,7 +261,7 @@ class ProfileAdmin extends Controller
         $vas = DB::table('views')
             ->where('active', '=', 1)
             ->first();
-        $tempalte = $vas->view . '/compeny';
+        $tempalte = $vas->view . '/compeny2';
         $data['menu'] = DB::table('menu')
             ->orderBy('id', 'desc')
             ->where('usef', '=', 'base')
