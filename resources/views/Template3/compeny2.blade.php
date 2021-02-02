@@ -46,6 +46,7 @@
 
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex align-items-center">
+    <div id="preloader"></div>
 
         <div class="container">
             <div class="row">
@@ -70,6 +71,7 @@
 
     <!-- ======= Cliens Section ======= -->
     <section id="cliens" class="cliens section-bg">
+    <div id="preloader"></div>
         <div class="container">
 
             <div class="justify-content-center row" data-aos="zoom-in">
@@ -92,6 +94,7 @@
     @include('Custem.About.index')
     {{-- @dd($data)<!-- ======= Services Section ======= --> --}}
     <section id="services" class="services section-bg">
+    <div id="preloader"></div>
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
@@ -149,6 +152,7 @@
     @include('Template3.team')
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
+    <div id="preloader"></div>
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
@@ -195,6 +199,7 @@
     {{-- @include('Template3.frekuenly') --}}
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
+    <div id="preloader"></div>
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
