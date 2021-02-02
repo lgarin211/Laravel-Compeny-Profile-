@@ -30,8 +30,8 @@ class ProfileAdmin extends Controller
                 $_POST[$key] = str_replace($find, $replace, $value);
             }
             // dd($_POST);
-}
-            }
+        }
+    }
     public function linkn()
     {
         $mas = DB::table($_GET['tabel'])->first();
@@ -115,6 +115,13 @@ class ProfileAdmin extends Controller
         return view('admin/developer', \compact('data'));
     }
 
+
+    public function cat_artikels()
+    {
+        $data = $this->data();
+        // dd($data);
+        return view('admin/cat_artikels', \compact('data'));
+    }
     public function cat_project()
     {
         $data = $this->data();
@@ -179,7 +186,7 @@ class ProfileAdmin extends Controller
     public static function data()
     {
         $data = [];
-        $tabel = ['developer', 'menu', 'artikels', 'project', 'setting', 'users', 'cat_project', 'views', 'testimonies', 'cliens', 'q_a_s', 'servides'];
+        $tabel = ['developer', 'menu', 'artikels', 'project', 'setting', 'users', 'cat_project', 'cat_artikels', 'views', 'testimonies', 'cliens', 'q_a_s', 'servides'];
         foreach ($tabel as $key => $value) {
             $das = DB::table($value)
                 ->orderBy('id', 'desc')
@@ -210,6 +217,7 @@ class ProfileAdmin extends Controller
     public function allart()
     {
         $data = $this->data();
+
         $data['menu'] = DB::table('menu')
             ->orderBy('id', 'desc')
             ->where('usef', '=', 'artikel')
@@ -232,8 +240,15 @@ class ProfileAdmin extends Controller
             $artikels = $artikels->take(5);
         }
         $artikels = $artikels->get();
+        $data['sartikels'] = $data['artikels'];
+        if (!empty($_GET['w'])) {
+            $data['artikels'] = DB::table('artikels')
+                ->orderBy('id', 'desc')
+                ->where('cat', 'like', $_GET['w'])
+                ->get();
+        }
         // $artikels->toArray();
-        // dd($artikels);
+        // dd($data);
         return view('artikel.artikelhome', \compact('data'));
     }
     public function onart()
@@ -246,6 +261,7 @@ class ProfileAdmin extends Controller
             ->toArray();
         $data['item'] = DB::table('artikels')
             ->where('id', '=', $_GET['w'])->first();
+            $data['sartikels']=$data['artikels'];
         return view('artikel.onepost', \compact('data'));
     }
 
@@ -261,7 +277,7 @@ class ProfileAdmin extends Controller
         $vas = DB::table('views')
             ->where('active', '=', 1)
             ->first();
-        $tempalte = $vas->view . '/compeny2';
+        $tempalte = $vas->view . '/compeny';
         $data['menu'] = DB::table('menu')
             ->orderBy('id', 'desc')
             ->where('usef', '=', 'base')

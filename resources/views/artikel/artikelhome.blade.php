@@ -1,3 +1,4 @@
+{{-- @dd($data) --}}
 @include('Template3.head')
 @include('Template3.hero2')
 <section class="about" id="artikel" data-aos="fade-up">
@@ -43,68 +44,7 @@
 
             </div>
 
-            <!-- Sidebar Widgets Column -->
-            <div class="col-md-4">
-
-                <!-- Search Widget -->
-                <div class="card my-4">
-                    <h5 class="card-header">Search</h5>
-                    <div class="card-body">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search for...">
-                            <span class="input-group-append">
-                                <button class="btn btn-secondary" type="button">Go!</button>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Categories Widget -->
-                <div class="card my-4">
-                    <h5 class="card-header">Categories</h5>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <ul class="list-unstyled mb-0">
-                                    <li>
-                                        <a href="/artikel/pag?w={{$item->id}}">Web Design</a>
-                                    </li>
-                                    <li>
-                                        <a href="/artikel/pag?w={{$item->id}}">HTML</a>
-                                    </li>
-                                    <li>
-                                        <a href="/artikel/pag?w={{$item->id}}">Freebies</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-6">
-                                <ul class="list-unstyled mb-0">
-                                    <li>
-                                        <a href="/artikel/pag?w={{$item->id}}">JavaScript</a>
-                                    </li>
-                                    <li>
-                                        <a href="/artikel/pag?w={{$item->id}}">CSS</a>
-                                    </li>
-                                    <li>
-                                        <a href="/artikel/pag?w={{$item->id}}">Tutorials</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Side Widget -->
-                <div class="card my-4">
-                    <h5 class="card-header">Side Widget</h5>
-                    <div class="card-body">
-                        You can put anything you want inside of these side widgets. They are easy to use, and feature
-                        the
-                        new Bootstrap 4 card containers!
-                    </div>
-                </div>
-
-            </div>
+            @include('artikel.sidebar')
 
         </div>
         <!-- /.row -->
