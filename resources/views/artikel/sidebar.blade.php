@@ -23,7 +23,7 @@
                     <ul class="list-unstyled mb-0 row">
                         @foreach ($data['cat_artikels'] as $item)
                         <li class="col-md-10">
-                            <a href="/artikel?0={{$item->Link_Filter}}">{{$item->Nama_Filter}}</a>
+                            <a href="/artikel?w={{$item->Link_Filter}}">{{$item->Nama_Filter}}</a>
                         </li>
                         @endforeach
                     </ul>
