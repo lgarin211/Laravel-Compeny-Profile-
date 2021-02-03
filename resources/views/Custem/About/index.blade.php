@@ -1,7 +1,7 @@
 <section class="pas">
     <div class="about-section" data-aos="fade-up">
         <div class="inner-container">
-            
+
             @include('Template3.about')
 
             {{-- <h1>About Us</h1>

@@ -24,9 +24,9 @@
                     <h2 class="logo me-auto"><a href="/"><img src="{{$data['pasing']['LOGO']}}" alt="" width="auto"></a>
                     </h2>
                     <p>
-                        <strong>Alamat:</strong>{{$data['pasing']['Alamat']}}<br>
-                        <strong>Phone:</strong>{{$data['pasing']['Contak_Whatapps']}}<br>
-                        <strong>Email:</strong>{{$data['pasing']['Email']}}<br>
+                        <strong>Alamat: </strong>{{$data['pasing']['Alamat']}}<br>
+                        <strong>Phone: </strong>{{$data['pasing']['Contak_Whatapps']}}<br>
+                        <strong>Email: </strong>{{$data['pasing']['Email']}}<br>
                     </p>
                 </div>
 
