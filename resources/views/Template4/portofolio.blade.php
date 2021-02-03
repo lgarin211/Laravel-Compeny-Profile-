@@ -1,0 +1,5 @@
+@include('Template4.Componen.head')
+@include('Template4.Componen.Portofolio')
+@yield('breadcrumbs')
+@yield('Portfolio')
+@include('Template4.Componen.foot')

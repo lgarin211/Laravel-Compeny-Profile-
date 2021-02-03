@@ -618,7 +618,7 @@ section {
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
-  padding: 70px 20px 80px 20px;
+  padding: 10px;
   transition: all ease-in-out 0.3s;
   background: #fff;
 }
@@ -674,7 +674,7 @@ section {
 }
 
 .services .iconbox-blue i {
-  color: #47aeff;
+  color: #6a097d;
 }
 
 .services .iconbox-blue:hover .icon i {
@@ -682,7 +682,7 @@ section {
 }
 
 .services .iconbox-blue:hover .icon path {
-  fill: #47aeff;
+  fill: #6a097d;
 }
 
 .services .iconbox-orange i {
@@ -815,7 +815,7 @@ section {
 }
 
 .portfolio .portfolio-item .portfolio-info .preview-link:hover, .portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: #6a097d;
+  color: #8d8b8e;
 }
 
 .portfolio .portfolio-item .portfolio-info .details-link {
@@ -862,16 +862,14 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: 1px solid #ececec;
-  border-bottom: 1px solid #ececec;
-  overflow: hidden;
+   overflow: hidden;
   background: #fff;
   height: 100px;
 }
 
 .clients .client-logo img {
   transition: all 0.3s ease-in-out;
-  height: 36px;
+  height: 90px;
   filter: grayscale(100%);
 }
 
@@ -2145,7 +2143,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #1ed33c;
+  color: #b44ec7;
   font-size: 18px;
   line-height: 1;
 }

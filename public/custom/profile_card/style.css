@@ -30,7 +30,7 @@ body{
 .pics{
   display: inline-block;
   padding: 8px;
-  background: linear-gradient(130deg, #74b9ff, #e66767);
+  background: linear-gradient(130deg, #74b9ff, #131313);
   margin: auto;
   border-radius: 50%;
   background-size: 200% 200%;
@@ -69,7 +69,7 @@ object-position: center;
 
 .desc{
   font-size: 18px;
-  color: #e66767;
+  color: #131313;
 }
 
 .sm{
@@ -86,21 +86,21 @@ object-position: center;
 }
 
 .smmodal a:hover{
-  color: #e66767;
+  color: #131313;
 }
 
 .contact-btn{
   display: inline-block;
   padding: 12px 50px;
-  color: #e66767;
-  border: 2px solid #e66767;
+  color: #131313;
+  border: 2px solid #131313;
   border-radius: 6px;
   margin-top: 16px;
   transition: .3s linear;
 }
 
 .contact-btn:hover{
-  background: #e66767;
+  background: #131313;
   color: #f2f2f2;
 }
 
@@ -118,7 +118,7 @@ object-position: center;
   flex: 1;
   text-transform: uppercase;
   font-size: 13px;
-  color: #e66767;
+  color: #131313;
 }
 
 .item span{

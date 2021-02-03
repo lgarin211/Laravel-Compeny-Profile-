@@ -271,6 +271,54 @@ class ProfileAdmin extends Controller
         // \dd($data);
         return view('admin.testimonies', \compact('data'));
     }
+    public function indfer2()
+    {
+        $data = $this->data();
+        $vas = DB::table('views')
+            ->where('active', '=', 1)
+            ->first();
+        $tempalte = $vas->view . '/about';
+        $data['menu'] = DB::table('menu')
+            ->orderBy('id', 'desc')
+            ->where('usef', '=', 'base')
+            ->get()
+            ->toArray();
+        // \dd($data);
+
+        return view($tempalte, \compact('data'));
+    }
+    public function indfer3()
+    {
+        $data = $this->data();
+        $vas = DB::table('views')
+            ->where('active', '=', 1)
+            ->first();
+        $tempalte = $vas->view . '/service';
+        $data['menu'] = DB::table('menu')
+            ->orderBy('id', 'desc')
+            ->where('usef', '=', 'base')
+            ->get()
+            ->toArray();
+        // \dd($data);
+
+        return view($tempalte, \compact('data'));
+    }
+    public function indfer4()
+    {
+        $data = $this->data();
+        $vas = DB::table('views')
+            ->where('active', '=', 1)
+            ->first();
+        $tempalte = $vas->view . '/portofolio';
+        $data['menu'] = DB::table('menu')
+            ->orderBy('id', 'desc')
+            ->where('usef', '=', 'base')
+            ->get()
+            ->toArray();
+        // \dd($data);
+
+        return view($tempalte, \compact('data'));
+    }
     public function indfer()
     {
         $data = $this->data();

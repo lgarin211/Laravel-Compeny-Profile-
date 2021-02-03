@@ -40,7 +40,7 @@
             <div class="col-lg-4 col-md-6 portfolio-item @foreach ($item->filter as $it)
                 {{$it.' '}}
             @endforeach">
-                <div class="portfolio-img"><img src="{{asset('').$item->Img}}" class="img-fluid" alt="">
+                <div class="portfolio-img"><img src="{{asset('').$item->Img}}" class="img-fluid" alt="{{$item->Name_Project}}">
                 </div>
                 <div class="portfolio-info">
                     <h4>{{$item->Name_Project}}</h4>

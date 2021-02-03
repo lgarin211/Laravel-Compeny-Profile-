@@ -15,45 +15,6 @@
 </section><!-- End Breadcrumbs -->
 @endsection
 
-@section('Us')
-<!-- ======= About Us Section ======= -->
-<section id="about-us" class="about-us">
-    <div class="container" data-aos="fade-up">
-
-        <div class="row content">
-            <div class="col-lg-6" data-aos="fade-right">
-                <h2>uyhm6Eum ipsam laborum deleniti velitena</h2>
-                <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assum perenda sruen jonee trave
-                </h3>
-            </div>
-            <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
-                <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                    in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum
-                </p>
-                <ul>
-                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequa
-                    </li>
-                    <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate
-                        velit</li>
-                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in</li>
-                </ul>
-                <p class="font-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore
-                    magna aliqua.
-                </p>
-            </div>
-        </div>
-
-    </div>
-</section><!-- End About Us Section -->
-@endsection
-
 
 @section('team')
 <!-- ======= Our Team Section ======= -->
@@ -68,12 +29,12 @@
         </div>
 
         <div class="row">
-
             {{--    loop here --}}
+            @foreach ($data['developer'] as $item)
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                 <div class="member" data-aos="fade-up">
                     <div class="member-img">
-                        <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                        <img src="{{asset('').$item->Poster}}" class="img-fluid" alt="{{$item->Name_Developer}}">
                         <div class="social">
                             <a href=""><i class="icofont-twitter"></i></a>
                             <a href=""><i class="icofont-facebook"></i></a>
@@ -82,11 +43,18 @@
                         </div>
                     </div>
                     <div class="member-info">
-                        <h4>Walter White</h4>
-                        <span>Chief Executive Officer</span>
+                        <h4>{{$item->Name_Developer}}</h4>
+                        <span>{{$item->Bidang}}</span>
+                        <p>
+                            <button data-bs-toggle="modal" data-bs-target="#exampleModal{{$item->id}}"
+                                class="btn btn-ungu">
+                                Lebih Lanjut
+                            </button>
+                        </p>
                     </div>
                 </div>
             </div>
+            @endforeach
             {{-- end loop --}}
 
         </div>
@@ -103,15 +71,16 @@
         <div class="section-title">
             <h2>Clients</h2>
         </div>
-
         <div class="row no-gutters clients-wrap clearfix" data-aos="fade-up">
 
             {{-- loop here --}}
+            @foreach ($data['cliens'] as $item)
             <div class="col-lg-3 col-md-4 col-6">
                 <div class="client-logo">
-                    <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+                    <img src="{{asset('').$item->Poster}}" class="img-fluid" z` z` alt="{{$item->Name}}">
                 </div>
             </div>
+            @endforeach
             {{-- end loop --}}
 
         </div>

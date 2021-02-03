@@ -7,7 +7,7 @@
 @include('Custem.About.index')
 @include('Template3.service')
 {{-- @include('Template3.cta') --}}
-{{-- @include('Template3.team') --}}
+@include('Template3.team')
 @include('Template3.portofolio')
 {{-- @include('Template3.pricing') --}}
 {{-- @include('Template3.frekuenly') --}}
