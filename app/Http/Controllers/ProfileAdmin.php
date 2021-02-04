@@ -218,11 +218,6 @@ class ProfileAdmin extends Controller
     {
         $data = $this->data();
 
-        $data['menu'] = DB::table('menu')
-            ->orderBy('id', 'desc')
-            ->where('usef', '=', 'artikel')
-            ->get()
-            ->toArray();
         $artikels = DB::table('artikels')
             ->orderBy('id', 'desc');
         if (!empty($_GET['o'])) {
@@ -254,15 +249,10 @@ class ProfileAdmin extends Controller
     public function onart()
     {
         $data = $this->data();
-        $data['menu'] = DB::table('menu')
-            ->orderBy('id', 'desc')
-            ->where('usef', '=', 'artikel')
-            ->get()
-            ->toArray();
         $data['item'] = DB::table('artikels')
-            ->where('id', '=', $_GET['w'])->first();
+            ->where('id', '=', $_GET['e'])->first();
             $data['sartikels']=$data['artikels'];
-        return view('artikel.onepost', \compact('data'));
+        return view('artikel.artikelhome', \compact('data'));
     }
 
     public function Testimony()
@@ -319,6 +309,22 @@ class ProfileAdmin extends Controller
 
         return view($tempalte, \compact('data'));
     }
+    public function indfer5()
+    {
+        $data = $this->data();
+        $vas = DB::table('views')
+            ->where('active', '=', 1)
+            ->first();
+        $tempalte = $vas->view . '/contak';
+        $data['menu'] = DB::table('menu')
+            ->orderBy('id', 'desc')
+            ->where('usef', '=', 'base')
+            ->get()
+            ->toArray();
+        // \dd($data);
+
+        return view($tempalte, \compact('data'));
+    }
     public function indfer()
     {
         $data = $this->data();
@@ -326,11 +332,6 @@ class ProfileAdmin extends Controller
             ->where('active', '=', 1)
             ->first();
         $tempalte = $vas->view . '/compeny';
-        $data['menu'] = DB::table('menu')
-            ->orderBy('id', 'desc')
-            ->where('usef', '=', 'base')
-            ->get()
-            ->toArray();
         // \dd($data);
 
         return view($tempalte, \compact('data'));

@@ -47,7 +47,7 @@
                         <span>{{$item->Bidang}}</span>
                         <p>
                             <button data-bs-toggle="modal" data-bs-target="#exampleModal{{$item->id}}"
-                                class="btn btn-ungu">
+                                class="btn-get-started">
                                 Lebih Lanjut
                             </button>
                         </p>

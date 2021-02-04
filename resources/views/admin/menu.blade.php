@@ -32,7 +32,7 @@
                 <div class="col-md-12">
                     <a href="pas?tabel=menu&id={{$item->id}}&view=editmenu" class="btn btn-primary"><i
                             class="fas fa-user-edit" aria-hidden="true"> Edit</i></a>
-                    <a href="" class="btn btn-danger"><i class="fas fa-trash" aria-hidden="true"> Hapus</i></a>
+                    <a href="/admin/del?tabel=menu&id={{$item->id}}" class="btn btn-danger"><i class="fas fa-trash" aria-hidden="true"> Hapus</i></a>
                 </div>
             </div>
         </div>

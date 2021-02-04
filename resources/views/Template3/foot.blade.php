@@ -72,7 +72,8 @@
     </div>
 </footer>
 
-<!-- End Footer --> @foreach ($data['developer'] as $item)
+<!-- End Footer -->
+@foreach ($data['developer'] as $item)
 
 {{-- here --}}
 <!-- Modal{{$item->Name_Developer}} -->

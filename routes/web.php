@@ -23,7 +23,7 @@ Route::get('/artikel/pag', [ProfileAdmin::class, 'onart']);
 Route::get('/about', [ProfileAdmin::class, 'indfer2']);
 Route::get('/services', [ProfileAdmin::class, 'indfer3']);
 Route::get('/portfolio', [ProfileAdmin::class, 'indfer4']);
-
+Route::get('/contak',[ProfileAdmin::class, 'indfer5']);
 
 
 

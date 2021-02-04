@@ -67,17 +67,48 @@
         </div>
     </div>
 </footer><!-- End Footer -->
+@foreach ($data['developer'] as $item)
 
-<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
-    integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
-    crossorigin="anonymous"></script>
+{{-- here --}}
+<!-- Modal{{$item->Name_Developer}} -->
+<div class="text-center modal fade" id="exampleModal{{$item->id}}" tabindex="-1"
+    aria-labelledby="exampleModalLabel{{$item->id}}" aria-hidden="true">
+    <div class="modal-dialog">
+        {{-- <div class="modal-content"> --}}
+        <div class="profile-cardmodal">
+            <div class="card-headeras">
+                <div class="pics">
+                    <img src="{{asset('').$item->Poster}}" alt="">
+                </div>
+                <div class="namemodal">{{$item->Name_Developer}}</div>
+                <div class="desc">{{$item->Bidang}}</div>
+            </div>
+            <div class="card-footermodal">
+                {{$item->Deskripsi}}
+            </div>
+        </div>
+    </div>
+</div>
+{{-- post --}}
+@endforeach
+@include('Template3.modal')
+
+
+
+<!-- Vendor JS Files -->
+<script src="{{asset('Company')}}/assets/vendor/jquery/jquery.min.js"></script>
+<script src="{{asset('Company')}}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="{{asset('Company')}}/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="{{asset('Company')}}/assets/vendor/php-email-form/validate.js"></script>
+<script src="{{asset('Company')}}/assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+<script src="{{asset('Company')}}/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="{{asset('Company')}}/assets/vendor/venobox/venobox.min.js"></script>
+<script src="{{asset('Company')}}/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+<script src="{{asset('Company')}}/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="{{asset('Company')}}/assets/vendor/aos/aos.js"></script>
+
+<!-- Template Main JS File -->
+<script src="{{asset('Company')}}/assets/js/main.js"></script>
 <script type="text/javascript">
     $('.owl-carousel').owlCarousel({
       loop:true,
@@ -93,28 +124,10 @@
               0:{
                   items:1
               },
-              // 100:{
-              //     items:2
-              // },
 
           }
       })
 </script>
-<!-- Vendor JS Files -->
-<script src="{{asset('Company')}}/assets/vendor/jquery/jquery.min.js"></script>
-<script src="{{asset('Company')}}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="{{asset('Company')}}/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-<script src="{{asset('Company')}}/assets/vendor/php-email-form/validate.js"></script>
-<script src="{{asset('Company')}}/assets/vendor/jquery-sticky/jquery.sticky.js"></script>
-<script src="{{asset('Company')}}/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="{{asset('Company')}}/assets/vendor/venobox/venobox.min.js"></script>
-<script src="{{asset('Company')}}/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-<script src="{{asset('Company')}}/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-<script src="{{asset('Company')}}/assets/vendor/aos/aos.js"></script>
-
-<!-- Template Main JS File -->
-<script src="{{asset('Company')}}/assets/js/main.js"></script>
-
 </body>
 
 </html>
