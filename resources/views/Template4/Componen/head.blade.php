@@ -64,7 +64,7 @@
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
 
-            <h1 class="logo me-auto"><a href="/"><span>Com</span>pany</a></h1>
+            <h1 class="logo me-auto"><a href="/"><img src="{{$data['pasing']['LOGO']}}" alt="" class="img-fluid"    z` width="auto"></a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="/" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -89,3 +89,4 @@
 
         </div>
     </header><!-- End Header -->
+                
