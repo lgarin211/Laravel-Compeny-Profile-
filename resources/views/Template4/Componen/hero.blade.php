@@ -3,46 +3,18 @@
     <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
         <div class="carousel-inner" role="listbox">
-
-            <!-- Slide 1 -->
-            <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg);">
+            @foreach ($data['sliders'] as $key=>$item)
+            <!-- Slide {{$key}} -->
+            <div class="carousel-item @if ($key==0){{'active'}}@endif" style="background-image: url('{{asset(''.$item->Poster)}}');">
                 <div class="carousel-container">
                     <div class="carousel-content animate__animated animate__fadeInUp">
-                        <h2>Welcome to <span>Company</span></h2>
-                        <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil
-                            ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse
-                            doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                        <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
+                        <h2><span>{{$item->Title}}</span></h2>
+                        <p>{{$item->Deskripsi}}.</p>
+                        <div class="text-center"><a href="/about" class="btn-get-started">Read More</a></div>
                     </div>
                 </div>
             </div>
-
-            <!-- Slide 2 -->
-            <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg);">
-                <div class="carousel-container">
-                    <div class="carousel-content animate__animated animate__fadeInUp">
-                        <h2>Lorem Ipsum Dolor</h2>
-                        <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil
-                            ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse
-                            doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                        <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Slide 3 -->
-            <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg);">
-                <div class="carousel-container">
-                    <div class="carousel-content animate__animated animate__fadeInUp">
-                        <h2>Sequi ea ut et est quaerat</h2>
-                        <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil
-                            ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse
-                            doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                        <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
-                    </div>
-                </div>
-            </div>
-
+            @endforeach
         </div>
 
         <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">

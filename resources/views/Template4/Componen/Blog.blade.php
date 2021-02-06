@@ -27,7 +27,7 @@
                 <article class="entry" data-aos="fade-up">
 
                     <div class="entry-img">
-                        <img src="{{asset('').$item->poster}}" alt="" class="img-fluid">
+                        <img src="{{asset('').$item->poster}}" alt="" class="img-fluid" style="max-height: 400px">
                     </div>
 
                     <h2 class="entry-title">

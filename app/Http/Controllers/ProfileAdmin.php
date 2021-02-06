@@ -246,6 +246,11 @@ class ProfileAdmin extends Controller
         // dd($data);
         return view('artikel.artikelhome', \compact('data'));
     }
+    public function adminSlider(Type $var = null)
+    {
+        $data=$this->data();
+        return view('admin.sliders', \compact('data'));
+    }
     public function onart()
     {
         $data = $this->data();
