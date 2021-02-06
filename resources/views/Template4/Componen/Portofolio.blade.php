@@ -5,11 +5,11 @@
 <section id="breadcrumbs" class="breadcrumbs">
     <div class="container">
 
-        <div class="d-flex justify-content-between align-items-center">
-            <h2>Portolio</h2>
+        <div class="d-flex text-center justify-content-between align-items-center">
+            <h2>Portofolio</h2>
             <ol>
-                <li><a href="index.html">Home</a></li>
-                <li>Portolio</li>
+                <li><a href="/">Home</a></li>
+                <li>Portofolio</li>
             </ol>
         </div>
 
@@ -23,9 +23,7 @@
 
         <div class="section-title">
             <h2>Portfolio</h2>
-            {{-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> --}}
+            <p>{{$data['pasing']['text_portofolio']}}</p>
         </div>
         <ul id="portfolio-flters" class="container  row d-flex justify-content-center text-center" data-aos="fade-up"
             data-aos-delay="100">

@@ -186,7 +186,7 @@ class ProfileAdmin extends Controller
     public static function data()
     {
         $data = [];
-        $tabel = ['developer', 'menu', 'artikels', 'project', 'setting', 'users', 'cat_project', 'cat_artikels', 'views', 'testimonies', 'cliens', 'q_a_s', 'servides'];
+        $tabel = ['developer','sliders', 'menu', 'artikels', 'project', 'setting', 'users', 'cat_project', 'cat_artikels', 'views', 'testimonies', 'cliens', 'q_a_s', 'servides'];
         foreach ($tabel as $key => $value) {
             $das = DB::table($value)
                 ->orderBy('id', 'desc')

@@ -3,11 +3,11 @@
 <section id="breadcrumbs" class="breadcrumbs">
     <div class="container">
 
-        <div class="d-flex justify-content-between align-items-center">
-            <h2>Blog</h2>
+        <div class="d-flex text-center justify-content-between align-items-center">
+            <h2>Artikel</h2>
             <ol>
                 <li><a href="index.html">Home</a></li>
-                <li>Blog</li>
+                <li>Artikel</li>
             </ol>
         </div>
 
@@ -66,9 +66,8 @@
             @yield('allart')
             @endif
             @section('siteart')
-            <div class="col-lg-4">
+            <div class=" col-lg-4">
                 <div class="sidebar" data-aos="fade-left">
-
                     <h3 class="sidebar-title">Search</h3>
                     <div class="sidebar-item search-form">
                         <form action="">
@@ -88,7 +87,7 @@
 
                     </div><!-- End sidebar categories-->
 
-                    <h3 class="sidebar-title">Recent Posts</h3>
+                    <h3 class="sidebar-title">Artikel Lain</h3>
                     <div class="sidebar-item recent-posts">
                         @foreach ($data['sartikels'] as $item)
                         <div class="post-item clearfix">
@@ -100,7 +99,7 @@
 
                     </div><!-- End sidebar recent posts-->
 
-                    <h3 class="sidebar-title">Tags</h3>
+                    {{-- <h3 class="sidebar-title">Tags</h3>
                     <div class="sidebar-item tags">
                         <ul>
                             <li><a href="#">App</a></li>
@@ -115,7 +114,7 @@
                             <li><a href="#">Smart</a></li>
                             <li><a href="#">Tips</a></li>
                             <li><a href="#">Marketing</a></li>
-                        </ul>
+                        </ul> --}}
 
                     </div><!-- End sidebar tags-->
 

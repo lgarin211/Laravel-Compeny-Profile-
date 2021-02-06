@@ -3,11 +3,11 @@
 <section id="breadcrumbs" class="breadcrumbs">
     <div class="container">
 
-        <div class="d-flex justify-content-between align-items-center">
-            <h2>About</h2>
+        <div class="d-flex text-center justify-content-between align-items-center">
+            <h2>Tentang Kami</h2>
             <ol>
-                <li><a href="index.html">Home</a></li>
-                <li>About</li>
+                <li><a href="/">Home</a></li>
+                <li>Tentang Kami</li>
             </ol>
         </div>
 
@@ -22,10 +22,8 @@
     <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-            <h2>Our <strong>Team</strong></h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-                fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <h2><strong>Team</strong></h2>
+            <p>{{$data['pasing']['text_team']}}.</p>
         </div>
 
         <div class="row">
@@ -68,16 +66,18 @@
 <section id="clients" class="clients">
     <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-            <h2>Clients</h2>
+        <div class="section-title" data-aos="fade-up">
+            <h2><strong>Cliens</strong></h2>
+            <p>{{$data['pasing']['text_cliens']}}.</p>
         </div>
+
         <div class="row no-gutters clients-wrap clearfix" data-aos="fade-up">
 
             {{-- loop here --}}
             @foreach ($data['cliens'] as $item)
             <div class="col-lg-3 col-md-4 col-6">
                 <div class="client-logo">
-                    <img src="{{asset('').$item->Poster}}" class="img-fluid" z` z` alt="{{$item->Name}}">
+                    <img src="{{asset('').$item->Poster}}" class="img-fluid" alt="{{$item->Name}}">
                 </div>
             </div>
             @endforeach

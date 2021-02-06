@@ -3,8 +3,8 @@
 <section id="breadcrumbs" class="breadcrumbs">
     <div class="container">
 
-        <div class="d-flex justify-content-between align-items-center">
-            <h2>Services</h2>
+        <div class="d-flex text-center justify-content-between align-items-center">
+            <h2></h2>
             <ol>
                 <li><a href="index.html">Home</a></li>
                 <li>Services</li>
@@ -19,9 +19,11 @@
 <!-- ======= Services Section ======= -->
 <section id="services" class="services section-bg">
     <div class="container" data-aos="fade-up">
-
+        <div class="section-title" data-aos="fade-up">
+            <h2><strong>Layanan Kamu</strong></h2>
+            <p>{{$data['pasing']['text_service']}}.</p>
+        </div>
         <div class="row text-center">
-
             {{-- loop here --}}
             @foreach ($data['servides'] as $item)
             <div class=" col-lg-3 col-md-4 d-flex align-items-stretch mb-1" data-aos="zoom-in" data-aos-delay="100">
@@ -40,9 +42,7 @@
             </div>
             @endforeach
             {{-- end loop --}}
-
         </div>
-
     </div>
 </section><!-- End Services Section -->
 @endsection
