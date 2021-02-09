@@ -11,6 +11,10 @@
         <div class="col-md-4 mb-2">
             @include('admin.modal')
             <button class="btn btn-primary" onclick="showinart()">Add New Artikel</button>
+            <a class="btn btn-primary" href="cat_artikels">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Filter Artikels</span>
+            </a>
         </div>
         <div class="col-md-4"></div>
         <div class="col-md-4">
