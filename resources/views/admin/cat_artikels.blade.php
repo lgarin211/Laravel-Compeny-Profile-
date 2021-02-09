@@ -31,7 +31,7 @@
                     <p>{{$item->Link_Filter}}</p>
                 </div>
                 <div class="col-md-12">
-                    <a href="del?tabel=cat_project&id={{$item->id}}"  class="btn btn-danger"><i class="fas fa-trash" aria-hidden="true"> Hapus</i></a>
+                    <a href="del?tabel=artikels&id={{$item->id}}"  class="btn btn-danger"><i class="fas fa-trash" aria-hidden="true"> Hapus</i></a>
                 </div>
             </div>
         </div>

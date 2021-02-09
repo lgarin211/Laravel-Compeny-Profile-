@@ -29,6 +29,10 @@
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Filter Project</span>
             </a>
+            <a class="nav-link" href="cat_artikels">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Filter Artikels</span>
+            </a>
             <a class="nav-link" href="project">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Project</span>
