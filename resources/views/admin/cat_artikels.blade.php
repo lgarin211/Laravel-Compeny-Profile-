@@ -10,6 +10,7 @@
     <div class="col-md-4 mb-2">
         @include('admin.modal')
         @yield('modalcat_art')
+        <a href="/admin/artikels" class="btn btn-primary">Add New Artikel</a>
     </div>
     <div class="col-md-4"></div>
     <div class="col-md-4">
